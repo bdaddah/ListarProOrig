@@ -1,0 +1,9 @@
+{
+  "name": "Runner",
+  "displayName": "Listar Pro",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8318136058462894~6119516050",
+    "ios_app_id": "ca-app-pub-8318136058462894~3084165930",
+    "user_tracking_usage_description": "This identifier will be used to deliver personalized ads to you."
+  }
+}

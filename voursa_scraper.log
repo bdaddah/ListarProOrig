@@ -1,0 +1,204 @@
+2025-08-06 20:54:41,102 - INFO - ====== WebDriver manager ======
+2025-08-06 20:54:46,169 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 20:54:46,519 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 20:54:46,751 - INFO - There is no [mac64] chromedriver "139.0.7258.66" for browser google-chrome "139.0.7258" in cache
+2025-08-06 20:54:46,765 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 20:54:47,366 - INFO - WebDriver version 139.0.7258.66 selected
+2025-08-06 20:54:47,369 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.66/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-06 20:54:47,369 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.66/mac-arm64/chromedriver-mac-arm64.zip
+2025-08-06 20:54:47,724 - INFO - Driver downloading response is 200
+2025-08-06 20:54:49,454 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 20:54:49,711 - INFO - Driver has been saved in cache [/Users/bdadd/.wdm/drivers/chromedriver/mac64/139.0.7258.66]
+2025-08-06 20:54:52,291 - INFO - Dossier créé: data
+2025-08-06 20:54:52,291 - INFO - Dossier créé: images
+2025-08-06 20:54:52,292 - INFO - Dossier créé: logs
+2025-08-06 20:54:52,292 - INFO - 
+==================================================
+2025-08-06 20:54:52,292 - INFO - Scraping catégorie: Immobilier
+2025-08-06 20:54:52,292 - INFO - ==================================================
+2025-08-06 20:54:52,292 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/real_estate
+2025-08-06 20:55:00,985 - INFO - Trouvé 20 annonces dans Immobilier
+2025-08-06 20:55:00,985 - INFO - [1/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B3%D9%83%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-2165
+2025-08-06 20:55:00,986 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B3%D9%83%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-2165
+2025-08-06 20:55:16,498 - INFO - [2/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B9%D9%86%D8%AF-%D8%AC%D8%B3%D8%B1-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-e015
+2025-08-06 20:55:16,500 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B9%D9%86%D8%AF-%D8%AC%D8%B3%D8%B1-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-e015
+2025-08-06 20:55:22,687 - INFO - [3/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/terain-a-vendre-b0bc
+2025-08-06 20:55:22,688 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/terain-a-vendre-b0bc
+2025-08-06 20:55:28,431 - INFO - [4/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%82%D8%B7%D8%B9%D8%A9-%D8%A7%D8%B1%D8%B6-%D9%81%D9%8A-%D8%AA%D9%81%D8%B1%D8%BA-%D8%B2%D9%8A%D9%86%D9%87-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9-824c
+2025-08-06 20:55:28,431 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%82%D8%B7%D8%B9%D8%A9-%D8%A7%D8%B1%D8%B6-%D9%81%D9%8A-%D8%AA%D9%81%D8%B1%D8%BA-%D8%B2%D9%8A%D9%86%D9%87-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9-824c
+2025-08-06 20:55:36,103 - INFO - [5/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/-%D8%AC%D8%B1%D8%A7%D9%86%D8%AF-%D8%A8%D9%84%D8%A7%D8%B2%D8%A7-grand-plaza-6dc7
+2025-08-06 20:55:36,103 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/-%D8%AC%D8%B1%D8%A7%D9%86%D8%AF-%D8%A8%D9%84%D8%A7%D8%B2%D8%A7-grand-plaza-6dc7
+2025-08-06 20:56:08,959 - INFO - [6/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%88-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--6120
+2025-08-06 20:56:08,960 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%88-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--6120
+2025-08-06 20:56:15,457 - INFO - [7/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%84%D9%83%D8%B5%D8%B1-%D8%A7%D9%84%D9%81%D9%88%D9%83%D8%A7%D9%86%D9%8A-%D9%82%D8%B1%D8%A8-%D9%83%D8%B1%D8%A7%D9%86-%D8%A7%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D8%A7%D9%83%D9%84%D8%A7%D8%B5-9b63
+2025-08-06 20:56:15,458 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%84%D9%83%D8%B5%D8%B1-%D8%A7%D9%84%D9%81%D9%88%D9%83%D8%A7%D9%86%D9%8A-%D9%82%D8%B1%D8%A8-%D9%83%D8%B1%D8%A7%D9%86-%D8%A7%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D8%A7%D9%83%D9%84%D8%A7%D8%B5-9b63
+2025-08-06 20:56:25,212 - INFO - [8/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%AA%D8%B1%D8%A7%D8%A8-%D8%A7%D8%B3%D9%83%D8%A7%D9%86-4c6a
+2025-08-06 20:56:25,213 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%AA%D8%B1%D8%A7%D8%A8-%D8%A7%D8%B3%D9%83%D8%A7%D9%86-4c6a
+2025-08-06 20:56:31,342 - INFO - [9/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%81%D8%B3%D9%83%D8%AA%D9%8A%D8%B14-3485
+2025-08-06 20:56:31,343 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%81%D8%B3%D9%83%D8%AA%D9%8A%D8%B14-3485
+2025-08-06 20:56:44,622 - INFO - [10/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D8%B9%D9%84%D9%89-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D9%84%D8%A7%D9%85%D9%84--d3fe
+2025-08-06 20:56:44,624 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D8%B9%D9%84%D9%89-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D9%84%D8%A7%D9%85%D9%84--d3fe
+2025-08-06 20:56:50,286 - INFO - [11/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%8A%D9%86-%D9%85%D9%86-k9-d59a
+2025-08-06 20:56:50,286 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%8A%D9%86-%D9%85%D9%86-k9-d59a
+2025-08-06 20:56:55,805 - INFO - [12/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%A8%D8%B1%D9%8A%D9%85%D9%8A%D8%B1-%D8%B4%D9%88%D9%89-%D9%81%D8%B2%D8%B1-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-5-%D8%A7%D9%83%D8%B1%D9%8A%D8%A8-%D9%85%D9%86-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9--4e48
+2025-08-06 20:56:55,807 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%A8%D8%B1%D9%8A%D9%85%D9%8A%D8%B1-%D8%B4%D9%88%D9%89-%D9%81%D8%B2%D8%B1-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-5-%D8%A7%D9%83%D8%B1%D9%8A%D8%A8-%D9%85%D9%86-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9--4e48
+2025-08-06 20:57:08,267 - INFO - [13/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D8%A8%D8%B1%D8%AA%D9%85%D8%A7%D9%87%D9%8A%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--fdc4
+2025-08-06 20:57:08,268 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D8%A8%D8%B1%D8%AA%D9%85%D8%A7%D9%87%D9%8A%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--fdc4
+2025-08-06 20:57:14,485 - INFO - [14/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/200%D9%85-%D9%81%D9%85%D8%AF%D8%A7%D9%84-m-%D9%84%D8%A7%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--b9dd
+2025-08-06 20:57:14,485 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/200%D9%85-%D9%81%D9%85%D8%AF%D8%A7%D9%84-m-%D9%84%D8%A7%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--b9dd
+2025-08-06 20:57:20,945 - INFO - [15/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/880-%D9%88-891-%D9%85%D9%86-h8-%D8%A7%D9%84%D9%85%D8%AD%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-752a
+2025-08-06 20:57:20,947 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/880-%D9%88-891-%D9%85%D9%86-h8-%D8%A7%D9%84%D9%85%D8%AD%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-752a
+2025-08-06 20:57:26,899 - INFO - [16/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A-%D8%A7%D9%84%D8%AA%D9%8A%D8%B3%D9%8A%D8%B1--331e
+2025-08-06 20:57:26,900 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A-%D8%A7%D9%84%D8%AA%D9%8A%D8%B3%D9%8A%D8%B1--331e
+2025-08-06 20:57:32,470 - INFO - [17/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/300-%D9%85-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D8%B4%D8%A7%D8%B1%D8%B9-20-%D9%85-%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D8%A7%D8%AA%D9%81%D9%88%D8%AA%D9%83%D9%85-e27b
+2025-08-06 20:57:32,471 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/300-%D9%85-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D8%B4%D8%A7%D8%B1%D8%B9-20-%D9%85-%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D8%A7%D8%AA%D9%81%D9%88%D8%AA%D9%83%D9%85-e27b
+2025-08-06 20:57:38,444 - INFO - [18/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D8%B2%D9%8A%D9%86-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%81%D8%B1%D8%B5%D8%A9--837c
+2025-08-06 20:57:38,445 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D8%B2%D9%8A%D9%86-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%81%D8%B1%D8%B5%D8%A9--837c
+2025-08-06 20:57:44,301 - INFO - [19/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%A7%D8%A8%D9%84%D9%88%D9%83-62-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--cf4d
+2025-08-06 20:57:44,303 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%A7%D8%A8%D9%84%D9%88%D9%83-62-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--cf4d
+2025-08-06 20:57:51,314 - INFO - [20/20] Extraction: https://www.voursa.com/EN/categories/real_estate/ads/appartement-a-cote-monstre-des-etrangers--6ff6
+2025-08-06 20:57:51,315 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/real_estate/ads/appartement-a-cote-monstre-des-etrangers--6ff6
+2025-08-06 20:58:06,427 - INFO - 
+==================================================
+2025-08-06 20:58:06,429 - INFO - Scraping catégorie: Véhicules
+2025-08-06 20:58:06,429 - INFO - ==================================================
+2025-08-06 20:58:06,429 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/vehicles
+2025-08-06 20:58:09,723 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 20:58:09,724 - INFO - Trouvé 0 annonces dans Véhicules
+2025-08-06 20:58:09,725 - INFO - 
+==================================================
+2025-08-06 20:58:09,725 - INFO - Scraping catégorie: Électronique
+2025-08-06 20:58:09,725 - INFO - ==================================================
+2025-08-06 20:58:09,725 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/electronics
+2025-08-06 20:58:15,069 - INFO - Trouvé 20 annonces dans Électronique
+2025-08-06 20:58:15,069 - INFO - [1/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/abonnement-netflix--2af8
+2025-08-06 20:58:15,069 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/abonnement-netflix--2af8
+2025-08-06 20:58:20,695 - INFO - [2/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D9%85%D8%B5%D8%A7%D8%A8%D9%8A%D8%AD-%D8%B7%D8%A7%D9%82%D8%A9-%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-57e7
+2025-08-06 20:58:20,696 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D9%85%D8%B5%D8%A7%D8%A8%D9%8A%D8%AD-%D8%B7%D8%A7%D9%82%D8%A9-%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-57e7
+2025-08-06 20:58:31,617 - INFO - [3/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%A8%D8%A7%D9%84%D8%B6%D8%BA%D8%B7-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A-%D9%82%D9%88%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%84%D8%A7-%D8%AA%D8%B6%D8%A7%D9%87%D9%89-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D9%84%D8%A7%D9%83-fb6a
+2025-08-06 20:58:31,618 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%A8%D8%A7%D9%84%D8%B6%D8%BA%D8%B7-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A-%D9%82%D9%88%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%84%D8%A7-%D8%AA%D8%B6%D8%A7%D9%87%D9%89-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D9%84%D8%A7%D9%83-fb6a
+2025-08-06 20:58:42,424 - INFO - [4/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83-%D8%B4%D9%87%D8%B1-150mru-4585
+2025-08-06 20:58:42,425 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83-%D8%B4%D9%87%D8%B1-150mru-4585
+2025-08-06 20:58:48,501 - INFO - [5/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%8A-%D8%A8%D8%A7%D8%AF-203e
+2025-08-06 20:58:48,503 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%8A-%D8%A8%D8%A7%D8%AF-203e
+2025-08-06 20:59:06,049 - INFO - [6/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/iphone-12-simple-3e3e
+2025-08-06 20:59:06,052 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/iphone-12-simple-3e3e
+2025-08-06 20:59:17,535 - INFO - [7/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/chargeur-lenovo-original--8ec3
+2025-08-06 20:59:17,541 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/chargeur-lenovo-original--8ec3
+2025-08-06 20:59:30,429 - INFO - [8/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/dell-core-i5-7d2d
+2025-08-06 20:59:30,430 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/dell-core-i5-7d2d
+2025-08-06 20:59:40,615 - INFO - [9/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/iphone-00a5
+2025-08-06 20:59:40,616 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/iphone-00a5
+2025-08-06 20:59:46,825 - INFO - [10/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-4063
+2025-08-06 20:59:46,827 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-4063
+2025-08-06 20:59:56,059 - INFO - [11/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/wifina-5561
+2025-08-06 20:59:56,060 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/wifina-5561
+2025-08-06 21:00:07,829 - INFO - [12/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/ordinateur--37c3
+2025-08-06 21:00:07,831 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/ordinateur--37c3
+2025-08-06 21:00:19,066 - INFO - [13/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/pc-gaming-ne8ive-3027
+2025-08-06 21:00:19,068 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/pc-gaming-ne8ive-3027
+2025-08-06 21:00:26,179 - INFO - [14/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/cd-god-of-war-2018-4f81
+2025-08-06 21:00:26,181 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/cd-god-of-war-2018-4f81
+2025-08-06 21:00:32,391 - INFO - [15/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81-6cc8
+2025-08-06 21:00:32,392 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81-6cc8
+2025-08-06 21:00:45,659 - INFO - [16/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/samsung-f13-04ba
+2025-08-06 21:00:45,661 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/samsung-f13-04ba
+2025-08-06 21:01:01,268 - INFO - [17/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/%D9%87%D8%A7%D8%AA%D9%81-tecno-spark-20-524d
+2025-08-06 21:01:01,269 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/%D9%87%D8%A7%D8%AA%D9%81-tecno-spark-20-524d
+2025-08-06 21:01:08,900 - INFO - [18/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/hp-pavillion-04fc
+2025-08-06 21:01:08,901 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/hp-pavillion-04fc
+2025-08-06 21:01:17,905 - INFO - [19/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/telephone-iphone-simple-5ad1
+2025-08-06 21:01:17,906 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/telephone-iphone-simple-5ad1
+2025-08-06 21:01:30,487 - INFO - [20/20] Extraction: https://www.voursa.com/EN/categories/electronics/ads/samsung-a14-%D8%B3%D8%B9%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D9%84%D9%86%D9%82%D8%A7%D8%B4-4433
+2025-08-06 21:01:30,487 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/electronics/ads/samsung-a14-%D8%B3%D8%B9%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D9%84%D9%86%D9%82%D8%A7%D8%B4-4433
+2025-08-06 21:01:40,286 - INFO - 
+==================================================
+2025-08-06 21:01:40,286 - INFO - Scraping catégorie: Meubles
+2025-08-06 21:01:40,286 - INFO - ==================================================
+2025-08-06 21:01:40,287 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/furniture
+2025-08-06 21:01:43,284 - INFO - Trouvé 20 annonces dans Meubles
+2025-08-06 21:01:43,284 - INFO - [1/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%AA%D8%A7%D8%AC%D9%8A%D8%B1-20a4
+2025-08-06 21:01:43,284 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%AA%D8%A7%D8%AC%D9%8A%D8%B1-20a4
+2025-08-06 21:01:49,096 - INFO - [2/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/beyt-rgad-f38a
+2025-08-06 21:01:49,097 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/beyt-rgad-f38a
+2025-08-06 21:01:56,806 - INFO - [3/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/frigo-hisense-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-59f2
+2025-08-06 21:01:56,808 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/frigo-hisense-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-59f2
+2025-08-06 21:02:09,121 - INFO - [4/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D8%B4%D9%88%D8%A7%D8%B1%D8%A9-53--479e
+2025-08-06 21:02:09,122 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D8%B4%D9%88%D8%A7%D8%B1%D8%A9-53--479e
+2025-08-06 21:02:15,511 - INFO - [5/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9-0e26
+2025-08-06 21:02:15,513 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9-0e26
+2025-08-06 21:02:36,825 - INFO - [6/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D9%83%D9%88%D9%86%D8%AC%D9%84%D8%AA%D9%8A%D8%B1--eeee
+2025-08-06 21:02:36,826 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D9%83%D9%88%D9%86%D8%AC%D9%84%D8%AA%D9%8A%D8%B1--eeee
+2025-08-06 21:02:52,386 - INFO - [7/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81-%D9%86%D9%88%D9%85-%D9%88%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--a300
+2025-08-06 21:02:52,387 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81-%D9%86%D9%88%D9%85-%D9%88%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--a300
+2025-08-06 21:03:17,976 - INFO - [8/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/mekinett-l7ame-jedide--fb70
+2025-08-06 21:03:17,978 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/mekinett-l7ame-jedide--fb70
+2025-08-06 21:03:38,457 - INFO - [9/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%84%D8%A7%D8%AA-%D9%85%D8%B3%D8%A7%D9%81%D8%B1--076c
+2025-08-06 21:03:38,458 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%84%D8%A7%D8%AA-%D9%85%D8%B3%D8%A7%D9%81%D8%B1--076c
+2025-08-06 21:03:47,301 - INFO - [10/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/6-structures-de-matelas-en-bois-et-2-coins-%D8%AC%D9%84%D9%81-%D8%A7%D9%84-%D8%AA%D8%AD%D8%AA-%D8%A8%D8%A7%D9%86%D9%83%D9%8A%D8%AA%D8%A7%D8%AA--5d03
+2025-08-06 21:03:47,302 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/6-structures-de-matelas-en-bois-et-2-coins-%D8%AC%D9%84%D9%81-%D8%A7%D9%84-%D8%AA%D8%AD%D8%AA-%D8%A8%D8%A7%D9%86%D9%83%D9%8A%D8%AA%D8%A7%D8%AA--5d03
+2025-08-06 21:03:53,997 - INFO - [11/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-1f42
+2025-08-06 21:03:53,998 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-1f42
+2025-08-06 21:04:05,084 - INFO - [12/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/refrigerateur-hitachi-tout-neuf-5ced
+2025-08-06 21:04:05,085 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/refrigerateur-hitachi-tout-neuf-5ced
+2025-08-06 21:04:12,836 - INFO - [13/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9--db51
+2025-08-06 21:04:12,837 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9--db51
+2025-08-06 21:04:33,301 - INFO - [14/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D9%81%D8%B1%D8%A7%D8%B4-%D9%86%D8%B8%D9%8A%D9%81-95be
+2025-08-06 21:04:33,303 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D9%81%D8%B1%D8%A7%D8%B4-%D9%86%D8%B8%D9%8A%D9%81-95be
+2025-08-06 21:04:39,330 - INFO - [15/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81%D8%A9-%D9%86%D9%88%D9%85-%D8%A7%D9%8A%D8%B7%D8%A7%D9%84%D9%8A--9901
+2025-08-06 21:04:39,331 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81%D8%A9-%D9%86%D9%88%D9%85-%D8%A7%D9%8A%D8%B7%D8%A7%D9%84%D9%8A--9901
+2025-08-06 21:04:51,819 - INFO - [16/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-1ea2
+2025-08-06 21:04:51,821 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-1ea2
+2025-08-06 21:05:03,864 - INFO - [17/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%A8%D9%8A%D8%AA-%D8%A7%D8%B1%D9%83%D8%A7%D8%AF--b8e5
+2025-08-06 21:05:03,866 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%A8%D9%8A%D8%AA-%D8%A7%D8%B1%D9%83%D8%A7%D8%AF--b8e5
+2025-08-06 21:05:12,546 - INFO - [18/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%83%D9%8A%D8%AA-%D9%85%D9%86-%D9%84%D8%B9%D9%83%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%86%D8%B8%D9%8A%D9%81--25d8
+2025-08-06 21:05:12,547 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%83%D9%8A%D8%AA-%D9%85%D9%86-%D9%84%D8%B9%D9%83%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%86%D8%B8%D9%8A%D9%81--25d8
+2025-08-06 21:05:24,536 - INFO - [19/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-ff43
+2025-08-06 21:05:24,538 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-ff43
+2025-08-06 21:05:32,421 - INFO - [20/20] Extraction: https://www.voursa.com/EN/categories/furniture/ads/%D8%B5%D8%A7%D9%84%D9%88%D9%87-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-edff
+2025-08-06 21:05:32,423 - INFO - Extraction des détails: https://www.voursa.com/EN/categories/furniture/ads/%D8%B5%D8%A7%D9%84%D9%88%D9%87-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-edff
+2025-08-06 21:05:40,130 - INFO - 
+==================================================
+2025-08-06 21:05:40,130 - INFO - Scraping catégorie: Emplois
+2025-08-06 21:05:40,130 - INFO - ==================================================
+2025-08-06 21:05:40,130 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/jobs
+2025-08-06 21:05:42,905 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:42,905 - INFO - Trouvé 0 annonces dans Emplois
+2025-08-06 21:05:42,909 - INFO - 
+==================================================
+2025-08-06 21:05:42,909 - INFO - Scraping catégorie: Services
+2025-08-06 21:05:42,909 - INFO - ==================================================
+2025-08-06 21:05:42,909 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/services
+2025-08-06 21:05:45,303 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:45,303 - INFO - Trouvé 0 annonces dans Services
+2025-08-06 21:05:45,307 - INFO - 
+==================================================
+2025-08-06 21:05:45,307 - INFO - Scraping catégorie: Mode
+2025-08-06 21:05:45,307 - INFO - ==================================================
+2025-08-06 21:05:45,307 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/fashion
+2025-08-06 21:05:48,157 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:48,157 - INFO - Trouvé 0 annonces dans Mode
+2025-08-06 21:05:48,161 - INFO - 
+==================================================
+2025-08-06 21:05:48,161 - INFO - Scraping catégorie: Sports & Loisirs
+2025-08-06 21:05:48,161 - INFO - ==================================================
+2025-08-06 21:05:48,161 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/sports
+2025-08-06 21:05:50,570 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:50,571 - INFO - Trouvé 0 annonces dans Sports & Loisirs
+2025-08-06 21:05:50,576 - INFO - 
+==================================================
+2025-08-06 21:05:50,576 - INFO - Scraping catégorie: Animaux
+2025-08-06 21:05:50,576 - INFO - ==================================================
+2025-08-06 21:05:50,576 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/animals
+2025-08-06 21:05:53,260 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:53,260 - INFO - Trouvé 0 annonces dans Animaux
+2025-08-06 21:05:53,266 - INFO - 
+==================================================
+2025-08-06 21:05:53,266 - INFO - Scraping catégorie: Autres
+2025-08-06 21:05:53,266 - INFO - ==================================================
+2025-08-06 21:05:53,266 - INFO - Scraping page 1: https://www.voursa.com/EN/categories/others
+2025-08-06 21:05:55,637 - WARNING - Aucune annonce trouvée sur la page 1
+2025-08-06 21:05:55,637 - INFO - Trouvé 0 annonces dans Autres
+2025-08-06 21:05:55,646 - INFO - 
+✅ Résultats sauvegardés: data/voursa_ads_20250806_210555.json
+2025-08-06 21:05:55,821 - INFO - Driver fermé correctement

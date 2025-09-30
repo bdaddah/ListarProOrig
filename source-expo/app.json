@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "listarpro",
+    "slug": "listarpro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.passionui.listarpro",
+      "infoPlist": {
+        "UIViewControllerBasedStatusBarAppearance": "YES"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.passionui.listarpro"
+    },
+    "newArchEnabled": false,
+    "extra": {
+      "eas": {
+        "projectId": "a89183a5-6f5a-4adb-a95a-71e747728d12"
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}

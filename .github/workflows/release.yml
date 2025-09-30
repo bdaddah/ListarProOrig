@@ -1,0 +1,61 @@
+name: Release Listar Pro
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    if: ${{ github.event.pull_request.merged == true || contains(github.event.head_commit.message, '[ci build]') }}
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        working-directory: source
+        run: yarn install
+
+      - name: Run lint code check
+        working-directory: source
+        run: |
+          yarn run lint
+          if [ $? -ne 0 ]; then
+            echo "ESLint found errors, failing the job."
+            exit 1
+          fi
+
+      - name: Build iOS
+        working-directory: source/ios
+        run: pod install --repo-update && fastlane build
+
+      - name: Upload artifact iOS
+        working-directory: source/ios
+        run: |
+          release_notes=$(cat <<EOF
+          Branch: ${{ github.event.pull_request.head.ref }}
+          Commit: ${{ github.sha }}
+          Author: ${{ github.actor }}
+          EOF
+          )
+          fastlane distribute release_notes:"$release_notes" pr_number:${{ github.event.pull_request.number }} github_repository:${{ github.repository }}
+
+      - name: Build Android
+        working-directory: source/android
+        run: fastlane build
+
+      - name: Upload artifact Android
+        working-directory: source/android
+        run: |
+          release_notes=$(cat <<EOF
+          Branch: ${{ github.event.pull_request.head.ref }}
+          Commit: ${{ github.sha }}
+          Author: ${{ github.actor }}
+          EOF
+          )
+          fastlane distribute release_notes:"$release_notes" pr_number:${{ github.event.pull_request.number }} github_repository:${{ github.repository }}

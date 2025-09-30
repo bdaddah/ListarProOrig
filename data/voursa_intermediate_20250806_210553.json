@@ -1,0 +1,2571 @@
+{
+  "real_estate": [
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B3%D9%83%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-2165",
+      "ad_id": "2165",
+      "scraping_date": "2025-08-06T20:55:00.986000",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168530_F13CDAA1-D048-4487-8713-D8F31B2EAA70.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 8",
+          "title": "",
+          "local_path": "images/2165/2165_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217167833_1C317749-E8DF-444C-85B9-262104C79FA7.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/2165/2165_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217167981_EA112A8C-C11A-48B3-8EDC-3E67EC9A95A7.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/2165/2165_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168103_BF386868-D563-4EAB-BD5A-9B7405AA3F52.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/2165/2165_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168143_A8866BDE-9D3F-473A-8503-F01844B52CDF.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/2165/2165_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168226_4487B9D1-20BF-4667-8990-A5D9A2EC47CE.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/2165/2165_005.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168271_9700D304-1C9A-4890-ACC1-27ECF767FF0C.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/2165/2165_006.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754217168395_19692560-1EE2-48F9-AE05-DF8987ADC147.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 7",
+          "title": "",
+          "local_path": "images/2165/2165_007.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "4"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D8%B9%D9%86%D8%AF-%D8%AC%D8%B3%D8%B1-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-e015",
+      "ad_id": "14d1dc9f82",
+      "scraping_date": "2025-08-06T20:55:16.500076",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747495706786_2cfc58ba-b540-421e-8520-9d2508ab0eb7.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/14d1dc9f82/14d1dc9f82_000.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "2"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/terain-a-vendre-b0bc",
+      "ad_id": "efea0dfbf9",
+      "scraping_date": "2025-08-06T20:55:22.688442",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754324946394_IMG_8759.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/efea0dfbf9/efea0dfbf9_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%82%D8%B7%D8%B9%D8%A9-%D8%A7%D8%B1%D8%B6-%D9%81%D9%8A-%D8%AA%D9%81%D8%B1%D8%BA-%D8%B2%D9%8A%D9%86%D9%87-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9-824c",
+      "ad_id": "3905dab697",
+      "scraping_date": "2025-08-06T20:55:28.431587",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754296533325_IMG_20250804_081348.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/3905dab697/3905dab697_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754296533175_IMG_20250804_081348.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/3905dab697/3905dab697_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/-%D8%AC%D8%B1%D8%A7%D9%86%D8%AF-%D8%A8%D9%84%D8%A7%D8%B2%D8%A7-grand-plaza-6dc7",
+      "ad_id": "ef3cc34456",
+      "scraping_date": "2025-08-06T20:55:36.103632",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518951053_1000149979.jpg&w=3840&q=75",
+          "alt": "Thumbnail 8",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950262_1000165804.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950341_1000150833.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950379_1000150468.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950515_1000150463.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950611_1000150454.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_005.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950772_1000150458.jpg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_006.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747518950934_1000150450.jpg&w=3840&q=75",
+          "alt": "Thumbnail 7",
+          "title": "",
+          "local_path": "images/ef3cc34456/ef3cc34456_007.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "32"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%88-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--6120",
+      "ad_id": "6120",
+      "scraping_date": "2025-08-06T20:56:08.960618",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754443748507_Screenshot_%25D9%25A2%25D9%25A0%25D9%25A2%25D9%25A5%25D9%25A0%25D9%25A8%25D9%25A0%25D9%25A6_%25D9%25A0%25D9%25A1%25D9%25A2%25D9%25A5%25D9%25A1%25D9%25A8_WhatsAppBusiness.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/6120/6120_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D8%A7%D8%B1-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D9%84%D9%83%D8%B5%D8%B1-%D8%A7%D9%84%D9%81%D9%88%D9%83%D8%A7%D9%86%D9%8A-%D9%82%D8%B1%D8%A8-%D9%83%D8%B1%D8%A7%D9%86-%D8%A7%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D8%A7%D9%83%D9%84%D8%A7%D8%B5-9b63",
+      "ad_id": "22498f481b",
+      "scraping_date": "2025-08-06T20:56:15.458574",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754499902553_1000135919.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/22498f481b/22498f481b_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754499902149_1000135926.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/22498f481b/22498f481b_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754499902265_1000135921.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/22498f481b/22498f481b_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754499902438_1000135920.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/22498f481b/22498f481b_003.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "5"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%AA%D8%B1%D8%A7%D8%A8-%D8%A7%D8%B3%D9%83%D8%A7%D9%86-4c6a",
+      "ad_id": "5c8b91f1c5",
+      "scraping_date": "2025-08-06T20:56:25.213384",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479928360_872452cb-0aff-4217-be23-fc65ce86fdb7.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/5c8b91f1c5/5c8b91f1c5_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%81%D8%B3%D9%83%D8%AA%D9%8A%D8%B14-3485",
+      "ad_id": "3485",
+      "scraping_date": "2025-08-06T20:56:31.343328",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754496708805_1001388564.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/3485/3485_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754496708533_1001388561.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/3485/3485_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754496708644_1001388562.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/3485/3485_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754496708754_1001388563.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/3485/3485_003.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "7"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D8%B9%D9%84%D9%89-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D9%84%D8%A7%D9%85%D9%84--d3fe",
+      "ad_id": "f1c4c5f37f",
+      "scraping_date": "2025-08-06T20:56:44.624303",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754494128800_1002392339.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/f1c4c5f37f/f1c4c5f37f_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88%D9%8A%D9%86-%D9%85%D9%86-k9-d59a",
+      "ad_id": "ca92607858",
+      "scraping_date": "2025-08-06T20:56:50.286807",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478217703_031e0a02-d018-49f6-9047-74e8d8e4902f.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ca92607858/ca92607858_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%AF%D9%8A%D8%A8%D9%84%D9%83%D8%B3-%D8%A8%D8%B1%D9%8A%D9%85%D9%8A%D8%B1-%D8%B4%D9%88%D9%89-%D9%81%D8%B2%D8%B1-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-5-%D8%A7%D9%83%D8%B1%D9%8A%D8%A8-%D9%85%D9%86-%D9%83%D8%AF%D8%B1%D9%88%D9%87-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%A9--4e48",
+      "ad_id": "030bd3b80f",
+      "scraping_date": "2025-08-06T20:56:55.806957",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050742_1000513264.jpg&w=3840&q=75",
+          "alt": "Thumbnail 7",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050228_1000513260.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050370_1000513261.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050485_1000513262.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050553_1000513263.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050597_1000513266.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_005.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754475050670_1000513265.jpg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/030bd3b80f/030bd3b80f_006.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "6"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D8%A8%D8%B1%D8%AA%D9%85%D8%A7%D9%87%D9%8A%D9%86-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--fdc4",
+      "ad_id": "8d20ddf752",
+      "scraping_date": "2025-08-06T20:57:08.268142",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754476030977_20250803_190406.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/8d20ddf752/8d20ddf752_000.jpg"
+        }
+      ],
+      "details": {
+        "bathrooms": "6"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/200%D9%85-%D9%81%D9%85%D8%AF%D8%A7%D9%84-m-%D9%84%D8%A7%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--b9dd",
+      "ad_id": "01e8281a69",
+      "scraping_date": "2025-08-06T20:57:14.485796",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754435852334_Screenshot_%25D9%25A2%25D9%25A0%25D9%25A2%25D9%25A5%25D9%25A0%25D9%25A8%25D9%25A0%25D9%25A5_%25D9%25A2%25D9%25A3%25D9%25A1%25D9%25A2%25D9%25A0%25D9%25A9_OneDrive.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/01e8281a69/01e8281a69_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/880-%D9%88-891-%D9%85%D9%86-h8-%D8%A7%D9%84%D9%85%D8%AD%D9%88%D9%84-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-752a",
+      "ad_id": "fa2ebe269a",
+      "scraping_date": "2025-08-06T20:57:20.947268",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754402825835_f8612604-25fb-4a5d-a180-1444ac808fe9.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/fa2ebe269a/fa2ebe269a_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%85%D8%B1%D9%88-%D9%84%D9%84%D8%A8%D9%8A%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D8%B9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%8A-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A-%D8%A7%D9%84%D8%AA%D9%8A%D8%B3%D9%8A%D8%B1--331e",
+      "ad_id": "ba56964bdd",
+      "scraping_date": "2025-08-06T20:57:26.900341",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754325868336_1002798490.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ba56964bdd/ba56964bdd_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/300-%D9%85-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D8%B4%D8%A7%D8%B1%D8%B9-20-%D9%85-%D9%81%D8%B1%D8%B5%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%84%D8%A7%D8%AA%D9%81%D9%88%D8%AA%D9%83%D9%85-e27b",
+      "ad_id": "247cac9b19",
+      "scraping_date": "2025-08-06T20:57:32.471265",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754063600114_1000504422.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/247cac9b19/247cac9b19_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D8%B2%D9%8A%D9%86-%D9%85%D9%86-%D8%B3%D9%83%D8%AA%D9%8A%D8%B1-4-%D9%81%D8%B1%D8%B5%D8%A9--837c",
+      "ad_id": "ffa04c275b",
+      "scraping_date": "2025-08-06T20:57:38.445622",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754418001279_1000512021.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ffa04c275b/ffa04c275b_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/%D9%86%D9%8A%D9%85%D8%B1%D9%88-%D9%85%D9%86-%D8%A7%D8%A8%D9%84%D9%88%D9%83-62-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--cf4d",
+      "ad_id": "b4b2ea33fa",
+      "scraping_date": "2025-08-06T20:57:44.303302",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754408216835_Screenshot_%25D9%25A2%25D9%25A0%25D9%25A2%25D9%25A5%25D9%25A0%25D9%25A8%25D9%25A0%25D9%25A5_%25D9%25A1%25D9%25A5%25D9%25A3%25D9%25A1%25D9%25A5%25D9%25A6_WhatsAppBusiness.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/b4b2ea33fa/b4b2ea33fa_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/real_estate/ads/appartement-a-cote-monstre-des-etrangers--6ff6",
+      "ad_id": "28b25bfb0b",
+      "scraping_date": "2025-08-06T20:57:51.315489",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Immobilier",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887947_IMG_7885.png&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887292_IMG_7879.png&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887407_IMG_7884.png&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887563_IMG_7877.png&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887717_IMG_7881.png&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754415887863_IMG_7882.png&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/28b25bfb0b/28b25bfb0b_005.jpg"
+        }
+      ],
+      "details": {
+        "rooms": "2",
+        "bathrooms": "1"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    }
+  ],
+  "vehicles": [],
+  "electronics": [
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/abonnement-netflix--2af8",
+      "ad_id": "34e03fdaa7",
+      "scraping_date": "2025-08-06T20:58:15.069792",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1753966381721_netflix-cover.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/34e03fdaa7/34e03fdaa7_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D9%85%D8%B5%D8%A7%D8%A8%D9%8A%D8%AD-%D8%B7%D8%A7%D9%82%D8%A9-%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-57e7",
+      "ad_id": "bf68d1206f",
+      "scraping_date": "2025-08-06T20:58:20.696060",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754349791598_IMG-20250804-WA0257.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/bf68d1206f/bf68d1206f_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1753810497987_1753567283287.png&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/bf68d1206f/bf68d1206f_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754349791325_IMG-20250731-WA0131.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/bf68d1206f/bf68d1206f_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754349791467_IMG-20250731-WA0129.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/bf68d1206f/bf68d1206f_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754349791558_IMG-20250804-WA0258.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/bf68d1206f/bf68d1206f_004.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%A8%D8%A7%D9%84%D8%B6%D8%BA%D8%B7-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A-%D9%82%D9%88%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%84%D8%A7-%D8%AA%D8%B6%D8%A7%D9%87%D9%89-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D8%B3%D9%84%D8%A7%D9%83-fb6a",
+      "ad_id": "f3691f6db4",
+      "scraping_date": "2025-08-06T20:58:31.618793",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1743608495894_1de532d9-50ff-4463-bb3a-355d17b96140.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/f3691f6db4/f3691f6db4_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1743608495598_ADF88C53-DBB9-4F2C-B58E-85EEDAAEEE71.PNG&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/f3691f6db4/f3691f6db4_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1743608495740_A99EDD0E-19EB-46CC-B94F-AC0449F86A27.PNG&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/f3691f6db4/f3691f6db4_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83-%D8%B4%D9%87%D8%B1-150mru-4585",
+      "ad_id": "4585",
+      "scraping_date": "2025-08-06T20:58:42.425243",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754316226647_IMG_2470.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/4585/4585_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%8A-%D8%A8%D8%A7%D8%AF-203e",
+      "ad_id": "bc1247f3da",
+      "scraping_date": "2025-08-06T20:58:48.503537",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538978_IMG_7685.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538632_IMG_7691.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538737_IMG_7694.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538814_IMG_7688.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538906_IMG_7686.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754501538943_IMG_7689.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/bc1247f3da/bc1247f3da_005.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/iphone-12-simple-3e3e",
+      "ad_id": "613737fd17",
+      "scraping_date": "2025-08-06T20:59:06.052297",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754442641522_8dc43bea-7d5a-4e7e-a911-cabbd106f7c3.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/613737fd17/613737fd17_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754442641356_52d30115-86db-4b69-9b6c-3a5d53824e41.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/613737fd17/613737fd17_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754442641423_1dd63c00-e2cc-4afa-983b-270f36d5470c.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/613737fd17/613737fd17_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/chargeur-lenovo-original--8ec3",
+      "ad_id": "116768cb0f",
+      "scraping_date": "2025-08-06T20:59:17.541691",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1749832372520_IMG_20250613_161246_222.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/116768cb0f/116768cb0f_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1749832371515_IMG_20250613_161327_223.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/116768cb0f/116768cb0f_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1749832371695_IMG_20250613_161327_223.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/116768cb0f/116768cb0f_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1749832371889_IMG_20250613_161306_428.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/116768cb0f/116768cb0f_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1749832372369_IMG_20250613_161256_705.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/116768cb0f/116768cb0f_004.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/dell-core-i5-7d2d",
+      "ad_id": "eaa7be08a4",
+      "scraping_date": "2025-08-06T20:59:30.430868",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754423090142_IMG_20250804_181813_626.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/eaa7be08a4/eaa7be08a4_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754423089582_IMG_20250804_181806_555.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/eaa7be08a4/eaa7be08a4_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754423089780_IMG_20250804_181820_672.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/eaa7be08a4/eaa7be08a4_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/iphone-00a5",
+      "ad_id": "fee1c58951",
+      "scraping_date": "2025-08-06T20:59:40.616780",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754495359640_1000135139.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/fee1c58951/fee1c58951_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D8%A7%D8%AA-4063",
+      "ad_id": "4063",
+      "scraping_date": "2025-08-06T20:59:46.826968",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754498661595_%25D8%25A5%25D8%25B6%25D8%25A7%25D9%2581%25D8%25A9%2520%25D8%25B9%25D9%2586%25D9%2588%25D8%25A7%25D9%2586%2520%25D9%2581%25D8%25B1%25D8%25B9%25D9%258A.png&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/4063/4063_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754498661212_%25D9%2585%25D9%2586%25D8%25B0%2520%25D8%25B9%25D8%25A7%25D9%2585%25202010.png&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/4063/4063_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754498661302_%25D8%25B1%25D8%25B3%25D8%25A7%25D9%2584%25D8%25A9%2520%25D8%25AA%25D9%2582%25D8%25AF%25D9%258A%25D9%2585%2520%25D9%2585%25D9%2587%25D9%2586%25D8%25AF%25D8%25B3%2520%25D8%25A8%25D8%25B3%25D9%258A%25D8%25B7%2520%25D8%25A3%25D8%25A8%25D9%258A%25D8%25B6%2520%25D9%2588%25D8%25A3%25D8%25B3%25D9%2588%25D8%25AF.png&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/4063/4063_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754498661449_%25D8%25B2%25D9%2588%25D8%25AF%2520%25D8%25AF%25D8%25AE%25D9%2584%25D9%2583%2520%25D9%2585%25D8%25B9%2520%25D9%2588%25D8%25B5%25D9%2584%25D9%2586%25D9%258A.png&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/4063/4063_003.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/wifina-5561",
+      "ad_id": "5561",
+      "scraping_date": "2025-08-06T20:59:56.060644",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754494879453_IMG_2028.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/5561/5561_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754494878924_IMG_2028.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/5561/5561_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754494879254_IMG_2028.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/5561/5561_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/ordinateur--37c3",
+      "ad_id": "0050ec417e",
+      "scraping_date": "2025-08-06T21:00:07.831538",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754495540394_IMG_3413.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/0050ec417e/0050ec417e_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754495540154_IMG_3418.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/0050ec417e/0050ec417e_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754495540300_IMG_3414.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/0050ec417e/0050ec417e_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/pc-gaming-ne8ive-3027",
+      "ad_id": "3027",
+      "scraping_date": "2025-08-06T21:00:19.068182",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754324736694_WhatsApp%2520Image%25202025-08-04%2520at%252009.20.59_540a1686.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/3027/3027_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754324736647_WhatsApp%2520Image%25202025-08-04%2520at%252009.21.00_6f49f38e.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/3027/3027_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/cd-god-of-war-2018-4f81",
+      "ad_id": "316e7e51ed",
+      "scraping_date": "2025-08-06T21:00:26.181091",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754499098151_IMG_%25D9%25A2%25D9%25A0%25D9%25A2%25D9%25A5%25D9%25A0%25D9%25A8%25D9%25A0%25D9%25A6_%25D9%25A1%25D9%25A6%25D9%25A4%25D9%25A6%25D9%25A3%25D9%25A3.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/316e7e51ed/316e7e51ed_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81-6cc8",
+      "ad_id": "8be47dea36",
+      "scraping_date": "2025-08-06T21:00:32.392508",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754493904105_27193dac-7d41-47f6-bc35-dcba9c0bcbe5.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/8be47dea36/8be47dea36_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754493903868_292b3e6f-c809-451f-9f30-519d1a489fa6.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/8be47dea36/8be47dea36_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754493903975_292b3e6f-c809-451f-9f30-519d1a489fa6.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/8be47dea36/8be47dea36_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/samsung-f13-04ba",
+      "ad_id": "2854789375",
+      "scraping_date": "2025-08-06T21:00:45.661708",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487650517_FullSizeRender.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/2854789375/2854789375_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487650093_FullSizeRender.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/2854789375/2854789375_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487650209_FullSizeRender.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/2854789375/2854789375_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487650295_FullSizeRender.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/2854789375/2854789375_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487650405_FullSizeRender.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/2854789375/2854789375_004.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/%D9%87%D8%A7%D8%AA%D9%81-tecno-spark-20-524d",
+      "ad_id": "f9662429ae",
+      "scraping_date": "2025-08-06T21:01:01.269721",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487393540_1000248217.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/f9662429ae/f9662429ae_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754487393459_1000248216.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/f9662429ae/f9662429ae_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/hp-pavillion-04fc",
+      "ad_id": "6f74587166",
+      "scraping_date": "2025-08-06T21:01:08.901841",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754485893626_272fab78-fee1-4d73-af71-b147d184b2a1.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/6f74587166/6f74587166_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754485893479_8f18cfc4-c107-4dfe-a975-1c3f1b7c90f7.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/6f74587166/6f74587166_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754485893518_c4abfd96-a537-4ea1-881c-586bb3dd25ff.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/6f74587166/6f74587166_002.jpg"
+        }
+      ],
+      "details": {
+        "power": "3"
+      },
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/telephone-iphone-simple-5ad1",
+      "ad_id": "0a8be88d5e",
+      "scraping_date": "2025-08-06T21:01:17.906771",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479468238_image.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/0a8be88d5e/0a8be88d5e_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479467825_image.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/0a8be88d5e/0a8be88d5e_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479467920_image.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/0a8be88d5e/0a8be88d5e_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479468023_image.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/0a8be88d5e/0a8be88d5e_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754479468110_image.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/0a8be88d5e/0a8be88d5e_004.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/electronics/ads/samsung-a14-%D8%B3%D8%B9%D8%B1-%D8%A8%D8%AF%D9%88%D9%86-%D8%A7%D9%84%D9%86%D9%82%D8%A7%D8%B4-4433",
+      "ad_id": "4433",
+      "scraping_date": "2025-08-06T21:01:30.487710",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Électronique",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754053097941_IMG-20250729-WA0016.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/4433/4433_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754053097802_IMG-20250729-WA0023.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/4433/4433_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754053097892_IMG-20250729-WA0020.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/4433/4433_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%AA%D8%A7%D8%AC%D9%8A%D8%B1-20a4",
+      "ad_id": "837d3dfae7",
+      "scraping_date": "2025-08-06T21:01:43.284956",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1750872513040_%25D9%25A2%25D9%25A0%25D9%25A2%25D9%25A5%25D9%25A0%25D9%25A6%25D9%25A2%25D9%25A4_%25D9%25A2%25D9%25A0%25D9%25A4%25D9%25A6%25D9%25A1%25D9%25A9.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/837d3dfae7/837d3dfae7_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/beyt-rgad-f38a",
+      "ad_id": "d81800c417",
+      "scraping_date": "2025-08-06T21:01:49.097847",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747135989383_IMG_6542.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/d81800c417/d81800c417_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1747135989178_202BAB11-0E83-445C-B074-F2CF293D7C5D.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/d81800c417/d81800c417_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/frigo-hisense-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-59f2",
+      "ad_id": "a0647061fb",
+      "scraping_date": "2025-08-06T21:01:56.808208",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752710735792_IMG_2862.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/a0647061fb/a0647061fb_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752710735695_IMG_2859.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/a0647061fb/a0647061fb_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D8%B4%D9%88%D8%A7%D8%B1%D8%A9-53--479e",
+      "ad_id": "ef3aeadbfe",
+      "scraping_date": "2025-08-06T21:02:09.122930",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754494344595_IMG_3656.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ef3aeadbfe/ef3aeadbfe_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9-0e26",
+      "ad_id": "ea05384ebc",
+      "scraping_date": "2025-08-06T21:02:15.513241",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693678658_IMG_8663.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/ea05384ebc/ea05384ebc_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693678195_IMG_8657.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/ea05384ebc/ea05384ebc_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693678389_IMG_8659.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/ea05384ebc/ea05384ebc_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693678486_IMG_8660.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/ea05384ebc/ea05384ebc_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693678542_IMG_8661.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/ea05384ebc/ea05384ebc_004.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D9%83%D9%88%D9%86%D8%AC%D9%84%D8%AA%D9%8A%D8%B1--eeee",
+      "ad_id": "1ce68e78a8",
+      "scraping_date": "2025-08-06T21:02:36.826826",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752753436488_IMG_8670.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/1ce68e78a8/1ce68e78a8_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752753436345_IMG_8669.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/1ce68e78a8/1ce68e78a8_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752753436434_IMG_8671.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/1ce68e78a8/1ce68e78a8_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81-%D9%86%D9%88%D9%85-%D9%88%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D9%84%D8%A8%D9%8A%D8%B9--a300",
+      "ad_id": "2d2f481ef7",
+      "scraping_date": "2025-08-06T21:02:52.387053",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478969138_14657.jpg&w=3840&q=75",
+          "alt": "Thumbnail 8",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478968503_14466.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478968581_15895.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478968637_15596.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478968799_15597.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478968943_2433.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_005.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478969015_14920.jpg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_006.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754478969105_14870.jpg&w=3840&q=75",
+          "alt": "Thumbnail 7",
+          "title": "",
+          "local_path": "images/2d2f481ef7/2d2f481ef7_007.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/mekinett-l7ame-jedide--fb70",
+      "ad_id": "bd773a79b9",
+      "scraping_date": "2025-08-06T21:03:17.977977",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754419702294_IMG_0920.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/bd773a79b9/bd773a79b9_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754419702018_IMG_0921.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/bd773a79b9/bd773a79b9_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754419702136_IMG_0921.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/bd773a79b9/bd773a79b9_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%84%D8%A7%D8%AA-%D9%85%D8%B3%D8%A7%D9%81%D8%B1--076c",
+      "ad_id": "f0d055242b",
+      "scraping_date": "2025-08-06T21:03:38.458792",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754402201256_1000005063.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/f0d055242b/f0d055242b_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754402201124_1000005060.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/f0d055242b/f0d055242b_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754402201166_1000005061.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/f0d055242b/f0d055242b_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754402201216_1000005062.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/f0d055242b/f0d055242b_003.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/6-structures-de-matelas-en-bois-et-2-coins-%D8%AC%D9%84%D9%81-%D8%A7%D9%84-%D8%AA%D8%AD%D8%AA-%D8%A8%D8%A7%D9%86%D9%83%D9%8A%D8%AA%D8%A7%D8%AA--5d03",
+      "ad_id": "099c384370",
+      "scraping_date": "2025-08-06T21:03:47.301944",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754362992032_D20412AB-38EC-47E8-8C4E-C7FE22508ECD.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/099c384370/099c384370_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-1f42",
+      "ad_id": "fb15e68437",
+      "scraping_date": "2025-08-06T21:03:53.998784",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754339224777_1754336314887_IMG_9008.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/fb15e68437/fb15e68437_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754339224462_1754336314556_IMG_9006.webp&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/fb15e68437/fb15e68437_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754339224509_1754336314776_IMG_9007.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/fb15e68437/fb15e68437_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754339224664_1754336314677_IMG_9009.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/fb15e68437/fb15e68437_003.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/refrigerateur-hitachi-tout-neuf-5ced",
+      "ad_id": "4bbbd09155",
+      "scraping_date": "2025-08-06T21:04:05.085757",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752587667595_49e25df1-5c36-4e84-b2e5-9d2238542f66.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/4bbbd09155/4bbbd09155_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752587667477_7a68bf3f-8c37-4532-ba2d-6a6e1cb564a1.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/4bbbd09155/4bbbd09155_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752587667556_5a7fc359-44bf-4726-b400-751cb8a73223.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/4bbbd09155/4bbbd09155_002.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B3%D8%A7%D9%84%D8%A9--db51",
+      "ad_id": "24d9595954",
+      "scraping_date": "2025-08-06T21:04:12.837755",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693504481_9C94CFF5-2095-43D1-899D-C5DE4C6156B2.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/24d9595954/24d9595954_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693504111_DD05A5AA-3075-4007-A01E-F0E9A147939C.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/24d9595954/24d9595954_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693504255_B6017149-0906-443A-9B2A-7028F79DE2C1.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/24d9595954/24d9595954_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1752693504347_7238C3D6-D98B-4DDA-AE14-F51A037A2C62.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/24d9595954/24d9595954_003.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D9%81%D8%B1%D8%A7%D8%B4-%D9%86%D8%B8%D9%8A%D9%81-95be",
+      "ad_id": "2350d920e3",
+      "scraping_date": "2025-08-06T21:04:33.303085",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754127023929_1001375486.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/2350d920e3/2350d920e3_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%BA%D8%B1%D9%81%D8%A9-%D9%86%D9%88%D9%85-%D8%A7%D9%8A%D8%B7%D8%A7%D9%84%D9%8A--9901",
+      "ad_id": "9901",
+      "scraping_date": "2025-08-06T21:04:39.331263",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754335335065_1000372714.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/9901/9901_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754335334905_1000372713.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/9901/9901_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754335334949_1000372715.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/9901/9901_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754335335025_1000372713.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/9901/9901_003.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%A7%D8%B1%D9%85%D9%88%D8%B1%D8%A7%D8%AA-%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-1ea2",
+      "ad_id": "4af4b19408",
+      "scraping_date": "2025-08-06T21:04:51.821358",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328760436_1000272516.jpg&w=3840&q=75",
+          "alt": "Thumbnail 6",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328759744_1000272247.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_001.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328759903_1000272273.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_002.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328760046_1000272272.jpg&w=3840&q=75",
+          "alt": "Thumbnail 3",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_003.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328760134_1000272244.jpg&w=3840&q=75",
+          "alt": "Thumbnail 4",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_004.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754328760291_1000272377.jpg&w=3840&q=75",
+          "alt": "Thumbnail 5",
+          "title": "",
+          "local_path": "images/4af4b19408/4af4b19408_005.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%A8%D9%8A%D8%AA-%D8%A7%D8%B1%D9%83%D8%A7%D8%AF--b8e5",
+      "ad_id": "3d48c504ba",
+      "scraping_date": "2025-08-06T21:05:03.866334",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754001200565_1000353618.jpg&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/3d48c504ba/3d48c504ba_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754000150209_1000353471.jpg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/3d48c504ba/3d48c504ba_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D9%85%D9%88%D9%83%D9%8A%D8%AA-%D9%85%D9%86-%D9%84%D8%B9%D9%83%D8%AF%D8%A9-%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%86%D8%B8%D9%8A%D9%81--25d8",
+      "ad_id": "fe0ea86a5a",
+      "scraping_date": "2025-08-06T21:05:12.547932",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754311649013_IMG_5688.jpeg&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/fe0ea86a5a/fe0ea86a5a_000.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%AC%D9%84%D8%B3%D8%A9-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-ff43",
+      "ad_id": "678399d7ce",
+      "scraping_date": "2025-08-06T21:05:24.538093",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754248015671_IMG_7541.png&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/678399d7ce/678399d7ce_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754248015408_IMG_7542.png&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/678399d7ce/678399d7ce_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    },
+    {
+      "url": "https://www.voursa.com/EN/categories/furniture/ads/%D8%B5%D8%A7%D9%84%D9%88%D9%87-%D8%A7%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-edff",
+      "ad_id": "73a8741bb5",
+      "scraping_date": "2025-08-06T21:05:32.423317",
+      "title": "",
+      "price": "",
+      "currency": "",
+      "description": "",
+      "location": "",
+      "category": "Meubles",
+      "subcategory": "",
+      "images": [
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754247928438_IMG_7546.png&w=3840&q=75",
+          "alt": "Thumbnail 2",
+          "title": "",
+          "local_path": "images/73a8741bb5/73a8741bb5_000.jpg"
+        },
+        {
+          "url": "https://www.voursa.com/_next/image?url=https%3A%2F%2Fvoursa-prod.s3.amazonaws.com%2Fimages%2F1754247928339_IMG_7545.png&w=3840&q=75",
+          "alt": "Thumbnail 1",
+          "title": "",
+          "local_path": "images/73a8741bb5/73a8741bb5_001.jpg"
+        }
+      ],
+      "details": {},
+      "seller": {
+        "name": "",
+        "phone": "",
+        "type": ""
+      },
+      "metadata": {
+        "views": 0,
+        "posted_date": "",
+        "modified_date": ""
+      }
+    }
+  ],
+  "jobs": [],
+  "services": [],
+  "fashion": [],
+  "sports": [],
+  "animals": []
+}

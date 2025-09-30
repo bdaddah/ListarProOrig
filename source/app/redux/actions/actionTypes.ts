@@ -1,0 +1,97 @@
+/** APPLICATION */
+export const START_APPLICATION = 'START_APPLICATION';
+export const SAVE_DOMAIN = 'SAVE_DOMAIN';
+export const SYNC_DEVICE_INFO = 'SYNC_DEVICE_INFO';
+export const SAVE_DEVICE_INFO = 'SAVE_DEVICE_INFO';
+export const SAVE_SETTING = 'SAVE_SETTING';
+export const CLEAR_REDUCER = 'CLEAR_REDUCER';
+export const CHANGE_THEME = 'CHANGE_THEME';
+export const CHANGE_FONT = 'CHANGE_FONT';
+export const CHANGE_DOMAIN = 'CHANGE_DOMAIN';
+export const FORCE_APPEARANCE = 'FORCE_APPEARANCE';
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+
+/** AUTHENTICATION */
+export const AUTH_CHECK = 'AUTH_CHECK';
+export const REGISTER = 'REGISTER';
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
+export const FORGOT = 'FORGOT';
+export const SAVE_USER = 'SAVE_USER';
+export const EDIT_PROFILE = 'EDIT_PROFILE';
+export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
+export const FETCH_USER = 'FETCH_USER';
+export const REQUEST_EMAIL_OTP = 'REQUEST_EMAIL_OTP';
+export const DEACTIVATE = 'DEACTIVATE';
+
+/** HOME */
+export const LOAD_HOME = 'LOAD_HOME';
+export const LOAD_HOME_WIDGET = 'LOAD_HOME_WIDGET';
+export const SAVE_HOME = 'SAVE_HOME';
+
+/** DISCOVERY */
+export const LOAD_DISCOVERY = 'LOAD_DISCOVERY';
+export const SAVE_DISCOVERY = 'SAVE_DISCOVERY';
+
+/** BLOG */
+export const LOAD_BLOG = 'LOAD_BLOG';
+export const SAVE_BLOG = 'SAVE_BLOG';
+export const DETAIL_BLOG = 'DETAIL_BLOG';
+
+/** WISHLIST */
+export const LOAD_WISHLIST = 'LOAD_WISHLIST';
+export const SAVE_WISHLIST = 'SAVE_WISHLIST';
+export const ADD_WISHLIST = 'ADD_WISHLIST';
+export const DELETE_WISHLIST = 'DELETE_WISHLIST';
+export const CLEAR_WISHLIST = 'CLEAR_WISHLIST';
+export const RESET_WISHLIST = 'RESET_WISHLIST';
+export const LOAD_MORE_WISHLIST = 'LOAD_MORE_WISHLIST';
+
+/** CATEGORY */
+export const LOAD_CATEGORY_LIST = 'LOAD_CATEGORY_LIST';
+export const LOAD_LOCATION = 'LOAD_LOCATION';
+
+/** SEARCH */
+export const LOAD_SEARCH = 'LOAD_SEARCH';
+export const LOAD_MORE_SEARCH = 'LOAD_MORE_SEARCH';
+export const SAVE_SEARCH = 'SAVE_SEARCH';
+export const RESET_SEARCH = 'RESET_SEARCH';
+export const SAVE_HISTORY = 'SAVE_HISTORY';
+export const CLEAR_HISTORY = 'CLEAR_HISTORY';
+
+/** LISTING */
+export const LOAD_LISTING = 'LOAD_LISTING';
+export const LOAD_MORE_LISTING = 'LOAD_MORE_LISTING';
+export const SAVE_LISTING = 'SAVE_LISTING';
+export const RESET_LISTING = 'RESET_LISTING';
+export const LISTING_DETAIL = 'LISTING_DETAIL';
+export const LOAD_AUTHOR_LISTING = 'LOAD_AUTHOR_LISTING';
+export const DELETE_LISTING_ITEM = 'DELETE_LISTING_ITEM';
+export const INIT_SUBMIT_SETTING = 'INIT_SUBMIT_SETTING';
+export const SUBMIT = 'SUBMIT';
+export const LOAD_TAGS = 'LOAD_TAGS';
+export const REQUEST_PAYMENT = 'REQUEST_PAYMENT';
+
+/** REVIEW */
+export const LOAD_REVIEW = 'LOAD_REVIEW';
+export const SAVE_REVIEW = 'SAVE_REVIEW';
+export const ADD_REVIEW = 'ADD_REVIEW';
+export const RESET_REVIEW = 'RESET_REVIEW';
+export const LOAD_AUTHOR_REVIEW = 'LOAD_AUTHOR_REVIEW';
+
+/** BOOKING */
+export const LOAD_BOOKING_LIST = 'LOAD_BOOKING_LIST';
+export const LOAD_DETAIL_BOOKING = 'LOAD_DETAIL_BOOKING';
+export const CANCEL_BOOKING = 'CANCEL_BOOKING';
+export const ACCEPT_BOOKING = 'ACCEPT_BOOKING';
+export const INIT_BOOKING = 'INIT_BOOKING';
+export const CALC_PRICE = 'CALC_PRICE';
+export const ORDER = 'ORDER';
+
+/** CLAIM */
+export const SUBMIT_CLAIM = 'SUBMIT_CLAIM';
+export const LOAD_CLAIM_LIST = 'LOAD_CLAIM_LIST';
+export const LOAD_CLAIM_DETAIL = 'LOAD_CLAIM_DETAIL';
+export const PAYMENT_CLAIM = 'PAYMENT_CLAIM';
+export const ACCEPT_CLAIM = 'ACCEPT_CLAIM';
+export const CANCEL_CLAIM = 'CANCEL_CLAIM';

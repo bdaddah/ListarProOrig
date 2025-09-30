@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "module": "esnext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "customConditions": [
+      "react-native"
+    ],
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@components": [
+        "app/components"
+      ],
+      "@assets": [
+        "app/assets"
+      ],
+      "@api": [
+        "app/api/index.js"
+      ],
+      "@redux": [
+        "app/redux"
+      ],
+      "@screens": [
+        "app/screens"
+      ],
+      "@models+types": [
+        "app/models+types"
+      ],
+      "@configs": [
+        "app/configs/index.js"
+      ],
+      "@utils": [
+        "app/utils/index.js"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "extends": "expo/tsconfig.base"
+}

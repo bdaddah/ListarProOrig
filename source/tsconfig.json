@@ -1,0 +1,16 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["app/components"],
+      "@assets": ["app/assets"],
+      "@api": ["app/api/index.js"],
+      "@redux": ["app/redux"],
+      "@screens": ["app/screens"],
+      "@models+types": ["app/models+types"],
+      "@configs": ["app/configs/index.js"],
+      "@utils": ["app/utils/index.js"]
+    }
+  }
+}
