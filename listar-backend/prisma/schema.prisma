@@ -1,0 +1,370 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  email         String    @unique
+  password      String
+  firstName     String?   @map("first_name")
+  lastName      String?   @map("last_name")
+  displayName   String?   @map("display_name")
+  description   String?   @db.Text
+  image         String?
+  url           String?
+  userLevel     Int       @default(0) @map("user_level")
+  tag           String?
+  active        Boolean   @default(true)
+  emailVerified Boolean   @default(false) @map("email_verified")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  listings      Listing[]
+  comments      Comment[]
+  wishlists     Wishlist[]
+  bookings      Booking[]
+  claims        Claim[]
+  devices       Device[]
+
+  @@map("users")
+}
+
+model Device {
+  id            Int      @id @default(autoincrement())
+  userId        Int      @map("user_id")
+  deviceId      String   @map("device_id")
+  deviceModel   String?  @map("device_model")
+  systemName    String?  @map("system_name")
+  systemVersion String?  @map("system_version")
+  token         String?  // Push notification token
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, deviceId])
+  @@map("devices")
+}
+
+model Category {
+  id          Int        @id @default(autoincrement())
+  name        String
+  slug        String     @unique
+  description String?    @db.Text
+  image       String?
+  icon        String?
+  color       String?
+  parentId    Int?       @map("parent_id")
+  count       Int        @default(0)
+  type        String     @default("category") // category, location, feature, tag
+  order       Int        @default(0)
+  createdAt   DateTime   @default(now()) @map("created_at")
+  updatedAt   DateTime   @updatedAt @map("updated_at")
+
+  // Relations
+  parent      Category?  @relation("CategoryHierarchy", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryHierarchy")
+  listings    ListingCategory[]
+
+  @@index([type])
+  @@index([parentId])
+  @@map("categories")
+}
+
+model Listing {
+  id               Int       @id @default(autoincrement())
+  userId           Int       @map("user_id")
+  title            String
+  slug             String    @unique
+  content          String?   @db.Text
+  excerpt          String?   @db.Text
+  status           String    @default("pending") // pending, publish, draft
+  thumbnail        String?
+  videoUrl         String?   @map("video_url")
+
+  // Location fields
+  countryId        Int?      @map("country_id")
+  stateId          Int?      @map("state_id")
+  cityId           Int?      @map("city_id")
+  address          String?
+  zipCode          String?   @map("zip_code")
+  latitude         Float?
+  longitude        Float?
+
+  // Contact fields
+  phone            String?
+  fax              String?
+  email            String?
+  website          String?
+
+  // Business fields
+  dateEstablish    DateTime? @map("date_establish")
+  color            String?
+  icon             String?
+
+  // Pricing
+  priceMin         String?   @map("price_min")
+  priceMax         String?   @map("price_max")
+
+  // Booking
+  bookingUse       Boolean   @default(false) @map("booking_use")
+  bookingStyle     String?   @map("booking_style") // standard, daily, hourly, table, slot
+  bookingPrice     String?   @map("booking_price")
+
+  // Claim
+  claimUse         Boolean   @default(true) @map("claim_use")
+  claimVerified    Boolean   @default(false) @map("claim_verified")
+
+  // Social media (JSON)
+  socialNetwork    Json?     @map("social_network")
+
+  // Opening hours (JSON)
+  openingHours     Json?     @map("opening_hours")
+
+  // Statistics
+  viewCount        Int       @default(0) @map("view_count")
+  ratingAvg        Float     @default(0) @map("rating_avg")
+  ratingCount      Int       @default(0) @map("rating_count")
+
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  categories       ListingCategory[]
+  galleries        Gallery[]
+  attachments      Attachment[]
+  comments         Comment[]
+  wishlists        Wishlist[]
+  bookings         Booking[]
+  claims           Claim[]
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("listings")
+}
+
+model ListingCategory {
+  id         Int      @id @default(autoincrement())
+  listingId  Int      @map("listing_id")
+  categoryId Int      @map("category_id")
+  type       String   @default("category") // category, location, feature, tag
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  // Relations
+  listing    Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([listingId, categoryId, type])
+  @@index([listingId])
+  @@index([categoryId])
+  @@map("listing_categories")
+}
+
+model Gallery {
+  id        Int      @id @default(autoincrement())
+  listingId Int      @map("listing_id")
+  full      String
+  thumb     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@index([listingId])
+  @@map("galleries")
+}
+
+model Attachment {
+  id        Int      @id @default(autoincrement())
+  listingId Int      @map("listing_id")
+  name      String
+  url       String
+  size      Int
+  type      String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@index([listingId])
+  @@map("attachments")
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  listingId Int      @map("listing_id")
+  userId    Int      @map("user_id")
+  parentId  Int?     @map("parent_id")
+  content   String   @db.Text
+  rating    Float?
+  status    String   @default("approved") // approved, pending, spam
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent    Comment? @relation("CommentReplies", fields: [parentId], references: [id])
+  replies   Comment[] @relation("CommentReplies")
+
+  @@index([listingId])
+  @@index([userId])
+  @@index([status])
+  @@map("comments")
+}
+
+model Wishlist {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  listingId Int      @map("listing_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, listingId])
+  @@index([userId])
+  @@map("wishlists")
+}
+
+model Booking {
+  id              Int      @id @default(autoincrement())
+  listingId       Int      @map("listing_id")
+  userId          Int      @map("user_id")
+  resourceId      Int      @map("resource_id")
+  bookingStyle    String   @map("booking_style") // standard, daily, hourly, table, slot
+
+  // Booking details (flexible JSON for different styles)
+  bookingData     Json     @map("booking_data")
+
+  // Contact info
+  firstName       String   @map("first_name")
+  lastName        String   @map("last_name")
+  email           String
+  phone           String?
+  address         String?
+  memo            String?  @db.Text
+
+  // Pricing
+  totalPrice      String   @map("total_price")
+
+  // Payment
+  paymentMethod   String?  @map("payment_method")
+  paymentStatus   String   @default("pending") @map("payment_status") // pending, completed, failed, refunded
+  paymentUrl      String?  @map("payment_url")
+  transactionId   String?  @map("transaction_id")
+
+  // Status
+  status          String   @default("pending") // pending, confirmed, cancelled, completed
+
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  listing         Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([listingId])
+  @@index([userId])
+  @@index([status])
+  @@map("bookings")
+}
+
+model Claim {
+  id              Int      @id @default(autoincrement())
+  listingId       Int      @map("listing_id")
+  userId          Int      @map("user_id")
+  firstName       String   @map("first_name")
+  lastName        String   @map("last_name")
+  email           String
+  phone           String?
+  memo            String?  @db.Text
+
+  // Payment
+  paymentMethod   String?  @map("payment_method")
+  paymentStatus   String   @default("pending") @map("payment_status") // pending, completed, failed
+  paymentUrl      String?  @map("payment_url")
+  transactionId   String?  @map("transaction_id")
+
+  // Status
+  status          String   @default("pending") // pending, approved, cancelled
+
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  listing         Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([listingId])
+  @@index([userId])
+  @@index([status])
+  @@map("claims")
+}
+
+model Post {
+  id          Int      @id @default(autoincrement())
+  title       String
+  slug        String   @unique
+  content     String   @db.Text
+  excerpt     String?  @db.Text
+  thumbnail   String?
+  status      String   @default("publish") // publish, draft, pending
+  viewCount   Int      @default(0) @map("view_count")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([status])
+  @@index([createdAt])
+  @@map("posts")
+}
+
+model Media {
+  id        Int      @id @default(autoincrement())
+  filename  String
+  path      String
+  url       String
+  mimeType  String   @map("mime_type")
+  size      Int
+  width     Int?
+  height    Int?
+  metadata  Json?    // Store image sizes and other metadata
+  userId    Int?     @map("user_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([userId])
+  @@map("media")
+}
+
+model Setting {
+  id    Int    @id @default(autoincrement())
+  key   String @unique
+  value Json
+  type  String @default("general") // general, payment, booking, etc.
+
+  @@index([type])
+  @@map("settings")
+}
+
+model Widget {
+  id      Int    @id @default(autoincrement())
+  type    String // category, listing, slider, banner, blog, admob
+  title   String?
+  data    Json
+  enabled Boolean @default(true)
+  order   Int    @default(0)
+
+  @@index([enabled])
+  @@map("widgets")
+}

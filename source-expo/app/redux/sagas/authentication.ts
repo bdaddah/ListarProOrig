@@ -37,15 +37,26 @@ function* onAuthCheck(action: Action): Generator<any, void, any> {
 function* onLogin(action: Action): Generator<any, void, any> {
   try {
     Api.navigator?.showLoading();
-    const {status} = yield Notifications.requestPermissionsAsync();
-    if (status === 'granted') {
-      const result = yield Notifications.getExpoPushTokenAsync({
-        projectId: Constants.expoConfig?.extra?.eas.projectId,
-      });
-      if (result.data) {
-        yield put({type: actionTypes.SYNC_DEVICE_INFO, token: result.data});
-        yield delay(200);
+    // Only try push notifications on real devices, not simulators
+    const isDevice = Constants.isDevice;
+    if (isDevice) {
+      try {
+        const {status} = yield Notifications.requestPermissionsAsync();
+        if (status === 'granted') {
+          const result = yield Notifications.getExpoPushTokenAsync({
+            projectId: Constants.expoConfig?.extra?.eas.projectId,
+          });
+          if (result.data) {
+            yield put({type: actionTypes.SYNC_DEVICE_INFO, token: result.data});
+            yield delay(200);
+          }
+        }
+      } catch (notifError) {
+        // Ignore notification errors in development/simulator
+        console.log('Push notification setup failed:', notifError);
       }
+    } else {
+      console.log('Skipping push notifications on simulator');
     }
 
     const response = yield Api.http.login({params: action.params});

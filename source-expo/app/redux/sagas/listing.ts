@@ -235,7 +235,7 @@ function* onInitSubmit(action: Action): Generator<any, void, any> {
     } else {
       responseSetting = yield Api.http.getSubmitSetting({});
     }
-    setting = SubmitSettingModel.fromJson(responseSetting);
+    setting = SubmitSettingModel.fromJson(responseSetting?.data || responseSetting);
     if (responseProduct?.success) {
       product = ProductModel.fromJson(responseProduct.data);
     }

@@ -241,6 +241,10 @@ const HeaderBackground: React.FC<HeaderBackgroundProps> = React.memo(
 
 const HeaderRightAction: React.FC<any> = ({children, ...restProps}) => {
   const renderAction = () => {
+    if (!children) {
+      return null;
+    }
+
     if (Array.isArray(children)) {
       return children.map((child, index) => {
         return (

@@ -47,7 +47,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
               {backgroundColor: (item.color ?? Colors.black_03) + '4D'},
             ]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"
@@ -95,7 +95,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
               {backgroundColor: (item.color ?? Colors.black_03) + '4D'},
             ]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"
@@ -156,7 +156,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
               {backgroundColor: (item.color ?? Colors.black_03) + '4D'},
             ]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"
@@ -217,7 +217,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
               {backgroundColor: (item.color ?? Colors.black_03) + '4D'},
             ]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"
@@ -273,7 +273,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
               {backgroundColor: (item.color ?? Colors.black_03) + '4D'},
             ]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               color={item.color}
               type="FontAwesome5"
             />
@@ -316,7 +316,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
           ]}>
           <View style={[styles.icon, {backgroundColor: item.color + '4D'}]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"
@@ -368,7 +368,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
           <View
             style={[styles.iconRound, {backgroundColor: item.color + '4D'}]}>
             <Icon
-              name={convertIcon(item.icon!)}
+              name={convertIcon(item.icon || 'folder')}
               size={18}
               color={item.color}
               type="FontAwesome5"

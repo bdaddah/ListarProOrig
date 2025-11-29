@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: listar-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: listardb
+      POSTGRES_USER: listaruser
+      POSTGRES_PASSWORD: listarpass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - listar-network
+
+  backend:
+    build: .
+    container_name: listar-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://listaruser:listarpass@postgres:5432/listardb?schema=public
+      JWT_SECRET: ${JWT_SECRET:-your-super-secret-jwt-key-change-in-production}
+      NODE_ENV: production
+      PORT: 3000
+    depends_on:
+      - postgres
+    volumes:
+      - ./uploads:/app/uploads
+    networks:
+      - listar-network
+    command: sh -c "npx prisma db push && node dist/index.js"
+
+volumes:
+  postgres_data:
+
+networks:
+  listar-network:
+    driver: bridge

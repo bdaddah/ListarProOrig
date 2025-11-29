@@ -14,7 +14,7 @@
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		C93F46C2E95BB55338BCBC3A /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA97DD9AEE9F6C5553863B /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
-		F9E4BF2516A3D4A3958DC3E9 /* libPods-listarpro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DC1AD122A2E36B10AB58E5 /* libPods-listarpro.a */; };
+		F7F1060999F9A4015E069D39 /* libPods-listarpro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F128315B13998B0619C5866A /* libPods-listarpro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +22,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = listarpro/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = listarpro/Info.plist; sourceTree = "<group>"; };
 		41BA97DD9AEE9F6C5553863B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-listarpro/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		76AFA34CC2818E7155F379C3 /* Pods-listarpro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listarpro.release.xcconfig"; path = "Target Support Files/Pods-listarpro/Pods-listarpro.release.xcconfig"; sourceTree = "<group>"; };
+		79150CF9EC2F88D2882143DE /* Pods-listarpro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listarpro.debug.xcconfig"; path = "Target Support Files/Pods-listarpro/Pods-listarpro.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = listarpro/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B019078CD5973736E2C63D63 /* Pods-listarpro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listarpro.debug.xcconfig"; path = "Target Support Files/Pods-listarpro/Pods-listarpro.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		CA6B4ECEDF2242BF8BD5E562 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "listarpro/noop-file.swift"; sourceTree = "<group>"; };
-		D3DC1AD122A2E36B10AB58E5 /* libPods-listarpro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-listarpro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E04B94716336EE10F910CFB8 /* Pods-listarpro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listarpro.release.xcconfig"; path = "Target Support Files/Pods-listarpro/Pods-listarpro.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = listarpro/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* listarpro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "listarpro-Bridging-Header.h"; path = "listarpro/listarpro-Bridging-Header.h"; sourceTree = "<group>"; };
+		F128315B13998B0619C5866A /* libPods-listarpro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-listarpro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BF4FE329B76CCC12ACD1D9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = listarpro/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E4BF2516A3D4A3958DC3E9 /* libPods-listarpro.a in Frameworks */,
+				F7F1060999F9A4015E069D39 /* libPods-listarpro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D3DC1AD122A2E36B10AB58E5 /* libPods-listarpro.a */,
+				F128315B13998B0619C5866A /* libPods-listarpro.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				9D96E1B7C2DA62EDBF6FCA8A /* Pods */,
 				1A4B04DB866BDEBC5FEE2474 /* ExpoModulesProviders */,
+				B5377ACE58299A1BF8FFB10B /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -116,11 +116,11 @@
 			name = listarpro;
 			sourceTree = "<group>";
 		};
-		9D96E1B7C2DA62EDBF6FCA8A /* Pods */ = {
+		B5377ACE58299A1BF8FFB10B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B019078CD5973736E2C63D63 /* Pods-listarpro.debug.xcconfig */,
-				E04B94716336EE10F910CFB8 /* Pods-listarpro.release.xcconfig */,
+				79150CF9EC2F88D2882143DE /* Pods-listarpro.debug.xcconfig */,
+				76AFA34CC2818E7155F379C3 /* Pods-listarpro.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -142,14 +142,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "listarpro" */;
 			buildPhases = (
-				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				0D81AFFDA37ED533846C2924 /* [CP] Check Pods Manifest.lock */,
 				A8FA97B9347B20AC7470294D /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				4CFB7C3FFF24781113A3B012 /* [CP] Embed Pods Frameworks */,
+				BD22A8747EDECF0CC5849159 /* [CP] Embed Pods Frameworks */,
+				FB2D5A3FCEFF6855B72A95A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,7 +221,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
 		};
-		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+		0D81AFFDA37ED533846C2924 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,7 +243,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4CFB7C3FFF24781113A3B012 /* [CP] Embed Pods Frameworks */ = {
+		A8FA97B9347B20AC7470294D /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-listarpro/expo-configure-project.sh\"\n";
+		};
+		BD22A8747EDECF0CC5849159 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,7 +280,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-listarpro/Pods-listarpro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+		FB2D5A3FCEFF6855B72A95A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,25 +334,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-listarpro/Pods-listarpro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A8FA97B9347B20AC7470294D /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-listarpro/expo-configure-project.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,7 +352,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B019078CD5973736E2C63D63 /* Pods-listarpro.debug.xcconfig */;
+			baseConfigurationReference = 79150CF9EC2F88D2882143DE /* Pods-listarpro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -387,7 +387,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E04B94716336EE10F910CFB8 /* Pods-listarpro.release.xcconfig */;
+			baseConfigurationReference = 76AFA34CC2818E7155F379C3 /* Pods-listarpro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

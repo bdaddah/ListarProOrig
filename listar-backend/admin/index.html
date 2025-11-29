@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>ListarPro Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>ListarPro Admin Console</h1>
+      <button id="logout-btn" class="button button-secondary hidden">
+        Log out
+      </button>
+    </header>
+    <main>
+      <section id="login-view">
+        <form id="login-form" class="card">
+          <h2>Sign in</h2>
+          <label class="input-group">
+            <span>Email / Username</span>
+            <input id="login-username" type="text" required />
+          </label>
+          <label class="input-group">
+            <span>Password</span>
+            <input id="login-password" type="password" required />
+          </label>
+          <button type="submit" class="button button-primary">Login</button>
+          <p class="helper-text">
+            Use the admin credentials seeded with the backend.
+          </p>
+          <div id="login-error" class="error hidden"></div>
+        </form>
+      </section>
+
+      <section id="dashboard-view" class="hidden">
+        <nav class="tabs">
+          <button class="tab active" data-target="categories-panel">
+            Categories
+          </button>
+          <button class="tab" data-target="listings-panel">Listings</button>
+        </nav>
+
+        <section id="categories-panel" class="panel active">
+          <div class="panel-header">
+            <h2>Categories</h2>
+            <button id="refresh-categories" class="button button-secondary">
+              Refresh
+            </button>
+          </div>
+          <form id="category-form" class="card form-grid">
+            <div class="form-header">
+              <h3 id="category-form-title">Add Category</h3>
+              <button
+                type="button"
+                id="category-cancel-edit"
+                class="button button-secondary hidden"
+              >
+                Cancel Edit
+              </button>
+            </div>
+            <label class="input-group">
+              <span>Name</span>
+              <input name="name" type="text" required />
+            </label>
+            <label class="input-group">
+              <span>Slug</span>
+              <input name="slug" type="text" placeholder="auto if empty" />
+            </label>
+            <label class="input-group">
+              <span>Type</span>
+              <select name="type">
+                <option value="category" selected>Category</option>
+                <option value="location">Location</option>
+                <option value="feature">Feature</option>
+                <option value="tag">Tag</option>
+              </select>
+            </label>
+            <label class="input-group">
+              <span>Parent ID</span>
+              <input name="parent_id" type="number" placeholder="Optional" />
+            </label>
+            <label class="input-group">
+              <span>Icon</span>
+              <input name="icon" type="text" placeholder="FontAwesome class" />
+            </label>
+            <label class="input-group">
+              <span>Color</span>
+              <input name="color" type="text" placeholder="#FF0000" />
+            </label>
+            <label class="input-group">
+              <span>Image URL</span>
+              <input name="image" type="text" placeholder="https://..." />
+            </label>
+            <label class="input-group">
+              <span>Description</span>
+              <textarea name="description" rows="2"></textarea>
+            </label>
+            <label class="input-group">
+              <span>Order</span>
+              <input name="order" type="number" value="0" />
+            </label>
+            <div class="form-actions full-width">
+              <button
+                type="submit"
+                id="category-submit-btn"
+                class="button button-primary"
+              >
+                Create Category
+              </button>
+            </div>
+            <div
+              id="category-form-error"
+              class="error hidden full-width"
+            ></div>
+          </form>
+
+          <div class="card">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Slug</th>
+                    <th>Type</th>
+                    <th>Parent</th>
+                    <th>Listings</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="categories-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="listings-panel" class="panel">
+          <div class="panel-header">
+            <h2>Listings</h2>
+            <div class="panel-actions">
+              <select id="listing-status-filter">
+                <option value="all">All statuses</option>
+                <option value="publish">Published</option>
+                <option value="pending">Pending</option>
+                <option value="draft">Draft</option>
+              </select>
+              <button id="refresh-listings" class="button button-secondary">
+                Refresh
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Author</th>
+                    <th>Created</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="listings-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <p>&copy; ListarPro Backend Admin</p>
+    </footer>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

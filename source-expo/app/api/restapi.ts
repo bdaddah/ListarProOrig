@@ -43,7 +43,12 @@ class HTTP {
         const token = getToken();
         const device = getDevice();
         if (!config.baseURL) {
-          config.baseURL = `${getDomain()}/wp-json`;
+          // NEW BACKEND: TypeScript/Node.js backend (replaces WordPress)
+          // Use your local IP address so mobile devices/emulators can connect
+          config.baseURL = 'http://192.168.42.129:3000/wp-json';
+
+          // OLD WORDPRESS: Uncomment to use WordPress backend
+          // config.baseURL = `${getDomain()}/wp-json`;
         }
         console.log('Before Request >>>', config);
         // Add more config before request

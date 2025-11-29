@@ -1,8 +1,6 @@
 import React, {useContext} from 'react';
 import {ImageURISource} from 'react-native';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {FontAwesome5, FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons';
 import {ApplicationContext, IconProps, Image} from '../index';
 
 const Icon: React.FC<IconProps> = ({type, name, size = 24, color, ...rest}) => {
