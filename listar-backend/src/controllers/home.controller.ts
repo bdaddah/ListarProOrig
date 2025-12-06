@@ -18,6 +18,21 @@ const toAbsoluteUrl = (baseUrl: string, path: string | null): string => {
   return `${baseUrl}${path}`;
 };
 
+// Helper function to get translated name
+const getTranslatedName = (item: any, lang: string): string => {
+  if (item.translations && typeof item.translations === 'object') {
+    return item.translations[lang] || item.translations['en'] || item.name;
+  }
+  return item.name;
+};
+
+// Helper function to extract language from Accept-Language header
+const getLanguageFromRequest = (req: Request): string => {
+  const acceptLanguage = req.headers['accept-language'] || 'en';
+  const lang = acceptLanguage.split(',')[0].split('-')[0].toLowerCase();
+  return lang;
+};
+
 const buildImageResponse = (
   baseUrl: string,
   fullPath?: string | null,
@@ -37,6 +52,8 @@ const buildImageResponse = (
 // Get home page data
 export const getHome = asyncHandler(async (req: Request, res: Response) => {
   const baseUrl = getBaseUrl(req);
+  const lang = getLanguageFromRequest(req);
+
   const categories = await prisma.category.findMany({
     where: { type: 'category', parentId: null },
     take: 8,
@@ -75,7 +92,7 @@ export const getHome = asyncHandler(async (req: Request, res: Response) => {
       sliders: sliderImages.length > 0 ? sliderImages : sliderFallback,
       categories: categories.map((c) => ({
         term_id: c.id,
-        name: c.name,
+        name: getTranslatedName(c, lang),
         icon: c.icon,
         color: c.color,
         image: c.image ? {
@@ -87,7 +104,7 @@ export const getHome = asyncHandler(async (req: Request, res: Response) => {
       })),
       locations: locations.map((l) => ({
         term_id: l.id,
-        name: l.name,
+        name: getTranslatedName(l, lang),
         image: l.image ? {
           id: 0,
           thumb: { url: toAbsoluteUrl(baseUrl, l.image) },

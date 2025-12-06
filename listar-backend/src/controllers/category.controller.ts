@@ -19,9 +19,26 @@ const toAbsoluteUrl = (baseUrl: string, path: string | null): string => {
   return `${baseUrl}${path}`;
 };
 
-const mapCategoryResponse = (baseUrl: string, cat: any) => ({
+// Helper function to get translated name
+const getTranslatedName = (cat: any, lang: string): string => {
+  if (cat.translations && typeof cat.translations === 'object') {
+    // Try exact match first, then fallback to English, then to default name
+    return cat.translations[lang] || cat.translations['en'] || cat.name;
+  }
+  return cat.name;
+};
+
+// Helper function to extract language from Accept-Language header
+const getLanguageFromRequest = (req: Request): string => {
+  const acceptLanguage = req.headers['accept-language'] || 'en';
+  // Parse Accept-Language header (e.g., "fr-FR,fr;q=0.9,en;q=0.8")
+  const lang = acceptLanguage.split(',')[0].split('-')[0].toLowerCase();
+  return lang;
+};
+
+const mapCategoryResponse = (baseUrl: string, cat: any, lang: string = 'en') => ({
   term_id: cat.id,
-  name: cat.name,
+  name: getTranslatedName(cat, lang),
   slug: cat.slug,
   description: cat.description,
   icon: cat.icon,
@@ -40,7 +57,7 @@ const mapCategoryResponse = (baseUrl: string, cat: any) => ({
   count: cat._count?.listings ?? 0,
   children: (cat.children ?? []).map((ch: any) => ({
     term_id: ch.id,
-    name: ch.name,
+    name: getTranslatedName(ch, lang),
     slug: ch.slug,
   })),
 });
@@ -64,6 +81,7 @@ const parseParentId = (value: any) => {
 // Get categories
 export const getCategories = asyncHandler(async (req: Request, res: Response) => {
   const baseUrl = getBaseUrl(req);
+  const lang = getLanguageFromRequest(req);
   const { category_id, parent_id } = req.query;
 
   const where: any = { type: 'category' };
@@ -89,13 +107,14 @@ export const getCategories = asyncHandler(async (req: Request, res: Response) =>
 
   res.json({
     success: true,
-    data: categories.map((cat) => mapCategoryResponse(baseUrl, cat)),
+    data: categories.map((cat) => mapCategoryResponse(baseUrl, cat, lang)),
   });
 });
 
 // Get discovery categories (featured)
 export const getDiscovery = asyncHandler(async (req: Request, res: Response) => {
   const baseUrl = getBaseUrl(req);
+  const lang = getLanguageFromRequest(req);
   const categories = await prisma.category.findMany({
     where: {
       type: 'category',
@@ -112,13 +131,14 @@ export const getDiscovery = asyncHandler(async (req: Request, res: Response) => 
 
   res.json({
     success: true,
-    data: categories.map((cat) => mapCategoryResponse(baseUrl, cat)),
+    data: categories.map((cat) => mapCategoryResponse(baseUrl, cat, lang)),
   });
 });
 
 // Get locations
 export const getLocations = asyncHandler(async (req: Request, res: Response) => {
   const baseUrl = getBaseUrl(req);
+  const lang = getLanguageFromRequest(req);
   const { parent_id } = req.query;
 
   const where: any = { type: 'location' };
@@ -142,7 +162,7 @@ export const getLocations = asyncHandler(async (req: Request, res: Response) => 
 
   res.json({
     success: true,
-    data: locations.map((loc) => mapCategoryResponse(baseUrl, loc)),
+    data: locations.map((loc) => mapCategoryResponse(baseUrl, loc, lang)),
   });
 });
 

@@ -15,8 +15,10 @@ export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
 export const AUTH_CHECK = 'AUTH_CHECK';
 export const REGISTER = 'REGISTER';
 export const LOGIN = 'LOGIN';
+export const SOCIAL_LOGIN = 'SOCIAL_LOGIN';
 export const LOGOUT = 'LOGOUT';
 export const FORGOT = 'FORGOT';
+export const SET_NEW_PASSWORD = 'SET_NEW_PASSWORD';
 export const SAVE_USER = 'SAVE_USER';
 export const EDIT_PROFILE = 'EDIT_PROFILE';
 export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
@@ -71,6 +73,9 @@ export const INIT_SUBMIT_SETTING = 'INIT_SUBMIT_SETTING';
 export const SUBMIT = 'SUBMIT';
 export const LOAD_TAGS = 'LOAD_TAGS';
 export const REQUEST_PAYMENT = 'REQUEST_PAYMENT';
+export const LOAD_MY_LISTINGS = 'LOAD_MY_LISTINGS';
+export const LOAD_PENDING_LISTINGS = 'LOAD_PENDING_LISTINGS';
+export const UPDATE_LISTING_STATUS = 'UPDATE_LISTING_STATUS';
 
 /** REVIEW */
 export const LOAD_REVIEW = 'LOAD_REVIEW';

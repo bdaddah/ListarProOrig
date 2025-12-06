@@ -165,6 +165,10 @@ class ProductModel {
       if (setting?.useViewStatus) {
         status = json.status ?? '';
       }
+      // Always read post_status for My Listings and Admin moderation screens
+      if (json.post_status) {
+        status = json.post_status;
+      }
 
       if (setting?.useViewVideo) {
         videoURL = json.video_url ?? '';

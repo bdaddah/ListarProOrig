@@ -17,21 +17,33 @@ model User {
   description   String?   @db.Text
   image         String?
   url           String?
+  role          String    @default("user") // admin, user
   userLevel     Int       @default(0) @map("user_level")
   tag           String?
   active        Boolean   @default(true)
   emailVerified Boolean   @default(false) @map("email_verified")
+
+  // Social auth providers
+  googleId      String?   @unique @map("google_id")
+  facebookId    String?   @unique @map("facebook_id")
+  twitterId     String?   @unique @map("twitter_id")
+  yahooId       String?   @unique @map("yahoo_id")
+  appleId       String?   @unique @map("apple_id")
+  authProvider  String?   @map("auth_provider") // local, google, facebook, twitter, yahoo, apple
+
   createdAt     DateTime  @default(now()) @map("created_at")
   updatedAt     DateTime  @updatedAt @map("updated_at")
 
   // Relations
-  listings      Listing[]
-  comments      Comment[]
-  wishlists     Wishlist[]
-  bookings      Booking[]
-  claims        Claim[]
-  devices       Device[]
+  listings       Listing[]
+  comments       Comment[]
+  wishlists      Wishlist[]
+  bookings       Booking[]
+  claims         Claim[]
+  devices        Device[]
+  passwordResets PasswordReset[]
 
+  @@index([role])
   @@map("users")
 }
 
@@ -54,19 +66,20 @@ model Device {
 }
 
 model Category {
-  id          Int        @id @default(autoincrement())
-  name        String
-  slug        String     @unique
-  description String?    @db.Text
-  image       String?
-  icon        String?
-  color       String?
-  parentId    Int?       @map("parent_id")
-  count       Int        @default(0)
-  type        String     @default("category") // category, location, feature, tag
-  order       Int        @default(0)
-  createdAt   DateTime   @default(now()) @map("created_at")
-  updatedAt   DateTime   @updatedAt @map("updated_at")
+  id           Int        @id @default(autoincrement())
+  name         String
+  slug         String     @unique
+  description  String?    @db.Text
+  image        String?
+  icon         String?
+  color        String?
+  parentId     Int?       @map("parent_id")
+  count        Int        @default(0)
+  type         String     @default("category") // category, location, feature, tag
+  order        Int        @default(0)
+  translations Json?      // { "en": "Name", "fr": "Nom", "ar": "اسم" }
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
 
   // Relations
   parent      Category?  @relation("CategoryHierarchy", fields: [parentId], references: [id])
@@ -85,9 +98,14 @@ model Listing {
   slug             String    @unique
   content          String?   @db.Text
   excerpt          String?   @db.Text
-  status           String    @default("pending") // pending, publish, draft
+  status           String    @default("pending") // pending (to be reviewed), publish (validated/public), draft
   thumbnail        String?
   videoUrl         String?   @map("video_url")
+
+  // Moderation tracking
+  previousStatus   String?   @map("previous_status") // Store previous status before update
+  moderatedAt      DateTime? @map("moderated_at")    // When admin approved/rejected
+  moderatedBy      Int?      @map("moderated_by")    // Admin user ID who moderated
 
   // Location fields
   countryId        Int?      @map("country_id")
@@ -367,4 +385,20 @@ model Widget {
 
   @@index([enabled])
   @@map("widgets")
+}
+
+model PasswordReset {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  token     String   @unique
+  expiresAt DateTime @map("expires_at")
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@map("password_resets")
 }

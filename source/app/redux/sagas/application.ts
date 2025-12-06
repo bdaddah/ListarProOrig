@@ -1,5 +1,5 @@
 import {all, delay, put, select, takeEvery} from 'redux-saga/effects';
-import {actionTypes, domainSelect, settingSelect} from '@redux';
+import {actionTypes, settingSelect} from '@redux';
 import Api from '@api';
 import {Settings} from '@configs';
 import {Action, DeviceModel, SettingModel} from '@models+types';
@@ -11,13 +11,14 @@ import {isValidURL} from '@utils';
  * @returns {Generator<*, void, *>}
  */
 function* onStartApplication(action: Action): Generator<any, void, any> {
-  const domain = yield select(domainSelect);
   let setting = yield select(settingSelect);
+  // Always use the domain from Settings config to ensure we use the correct backend
+  // This overrides any cached domain from redux-persist
   yield all([
     yield put({type: actionTypes.SYNC_DEVICE_INFO}),
     yield put({
       type: actionTypes.SAVE_DOMAIN,
-      domain: domain ?? Settings.domain,
+      domain: Settings.domain,
     }),
   ]);
 

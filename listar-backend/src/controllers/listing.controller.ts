@@ -4,6 +4,19 @@ import { AppError, asyncHandler } from '../middlewares/error.middleware';
 import { AuthRequest } from '../middlewares/auth.middleware';
 import { getPaginationParams, createPaginationResponse } from '../utils/pagination';
 
+// Listing status constants
+export const LISTING_STATUS = {
+  PENDING: 'pending',    // To be reviewed (new or modified by owner)
+  PUBLISH: 'publish',    // Validated by admin (public)
+  DRAFT: 'draft',        // Saved as draft by owner
+} as const;
+
+// User roles
+export const USER_ROLES = {
+  ADMIN: 'admin',
+  USER: 'user',
+} as const;
+
 // Helper function to get base URL from request
 const getBaseUrl = (req: Request): string => {
   const protocol = req.protocol;
@@ -36,16 +49,71 @@ const buildImageResponse = (
   };
 };
 
+// Check if user is admin (by role field or legacy userLevel)
 const isAdminUser = async (userId: number) => {
   const user = await prisma.user.findUnique({
     where: { id: userId },
-    select: { userLevel: true, active: true },
+    select: { role: true, userLevel: true, active: true },
   });
 
-  return !!user && user.active && user.userLevel >= 10;
+  return !!user && user.active && (user.role === USER_ROLES.ADMIN || user.userLevel >= 10);
 };
 
-// Get listings
+// Check if user is owner of the listing
+const isListingOwner = async (userId: number, listingId: number) => {
+  const listing = await prisma.listing.findUnique({
+    where: { id: listingId },
+    select: { userId: true },
+  });
+  return listing?.userId === userId;
+};
+
+// Check if user can view a listing (public listings visible to all, pending/draft only to owner/admin)
+const canViewListing = async (userId: number | undefined, listing: any) => {
+  // Public listings are visible to everyone
+  if (listing.status === LISTING_STATUS.PUBLISH) {
+    return true;
+  }
+
+  // Not authenticated - can only see public listings
+  if (!userId) {
+    return false;
+  }
+
+  // Admin can view all listings
+  const isAdmin = await isAdminUser(userId);
+  if (isAdmin) {
+    return true;
+  }
+
+  // Owner can view their own listings
+  return listing.userId === userId;
+};
+
+// Check if user can modify (update/delete) a listing
+const canModifyListing = async (userId: number, listingId: number) => {
+  const listing = await prisma.listing.findUnique({
+    where: { id: listingId },
+    select: { userId: true },
+  });
+
+  if (!listing) {
+    return false;
+  }
+
+  // Admin can modify any listing
+  const isAdmin = await isAdminUser(userId);
+  if (isAdmin) {
+    return true;
+  }
+
+  // Owner can modify their own listing
+  return listing.userId === userId;
+};
+
+// Get listings - Public endpoint shows only published listings
+// Authenticated users can see their own pending/draft listings
+// Admins can see all listings with filters
 export const getListings = asyncHandler(async (req: AuthRequest, res: Response) => {
   const baseUrl = getBaseUrl(req);
   const { skip, take, page } = getPaginationParams(req.query);
@@ -62,17 +130,39 @@ export const getListings = asyncHandler(async (req: AuthRequest, res: Response) 
   } = req.query;
 
   const where: any = {};
+  const currentUserId = req.user?.userId;
+  const isAdmin = currentUserId ? await isAdminUser(currentUserId) : false;
 
-  if (post_status) {
-    if ((post_status as string).toLowerCase() !== 'all') {
+  // Handle status filtering based on user role
+  if (post_status && (post_status as string).toLowerCase() !== 'all') {
+    // Specific status requested
+    if (post_status === LISTING_STATUS.PUBLISH) {
+      // Anyone can filter by published
+      where.status = LISTING_STATUS.PUBLISH;
+    } else if (isAdmin) {
+      // Admin can filter by any status
       where.status = post_status;
+    } else if (currentUserId && user_id && parseInt(user_id as string) === currentUserId) {
+      // User can filter their own listings by status
+      where.status = post_status;
+      where.userId = currentUserId;
+    } else {
+      // Non-admin trying to filter non-published listings of others - only show published
+      where.status = LISTING_STATUS.PUBLISH;
     }
-  } else if (!user_id) {
-    where.status = 'publish';
-  }
+  } else if (user_id) {
+    // Filtering by specific user
+    const targetUserId = parseInt(user_id as string);
+    where.userId = targetUserId;
 
-  if (user_id) {
-    where.userId = parseInt(user_id as string);
+    if (!isAdmin && currentUserId !== targetUserId) {
+      // Non-admin viewing another user's listings - only show published
+      where.status = LISTING_STATUS.PUBLISH;
+    }
+    // If admin or viewing own listings, show all statuses
+  } else {
+    // Default: public listing view - only show published
+    where.status = LISTING_STATUS.PUBLISH;
   }
 
   if (search) {
@@ -199,7 +289,7 @@ export const getListings = asyncHandler(async (req: AuthRequest, res: Response) 
   });
 });
 
-// Get single listing
+// Get single listing - Check visibility based on status and user role
 export const getListing = asyncHandler(async (req: AuthRequest, res: Response) => {
   const baseUrl = getBaseUrl(req);
   const { id } = req.query;
@@ -226,7 +316,13 @@ export const getListing = asyncHandler(async (req: AuthRequest, res: Response) =
     throw new AppError('Listing not found', 404);
   }
 
-  // Increment view count
+  // Check if user can view this listing
+  const canView = await canViewListing(req.user?.userId, listing);
+  if (!canView) {
+    throw new AppError('This listing is not available', 403);
+  }
+
+  // Increment view count (only for published listings viewed by non-owners)
   await prisma.listing.update({
     where: { id: listing.id },
     data: { viewCount: listing.viewCount + 1 },
@@ -388,6 +484,9 @@ export const getListing = asyncHandler(async (req: AuthRequest, res: Response) =
 });
 
 // Create/Update listing
+// - New listings start with status 'pending' (to be reviewed)
+// - When owner updates a published listing, it goes back to 'pending'
+// - Only admin can directly set status to 'publish'
 export const saveListing = asyncHandler(async (req: AuthRequest, res: Response) => {
   if (!req.user) {
     throw new AppError('Unauthorized', 401);
@@ -408,7 +507,7 @@ export const saveListing = asyncHandler(async (req: AuthRequest, res: Response) 
     website,
     color,
     icon,
-    status = 'pending',
+    status: requestedStatus,
     date_establish,
     thumbnail,
     gallery,
@@ -423,11 +522,12 @@ export const saveListing = asyncHandler(async (req: AuthRequest, res: Response) 
     social_network,
   } = req.body;
 
+  const isAdmin = await isAdminUser(req.user.userId);
+
   const listingData: any = {
     title,
     content,
     excerpt: content?.substring(0, 200),
-    status,
     address,
     zipCode: zip_code,
     phone,
@@ -453,17 +553,66 @@ export const saveListing = asyncHandler(async (req: AuthRequest, res: Response) 
   if (city) listingData.cityId = parseInt(city);
 
   let listing;
+  let message = 'Listing saved successfully';
 
   if (post_id) {
-    // Update existing
+    // Update existing listing
+    const listingId = parseInt(post_id);
+
+    // Check authorization
+    const canModify = await canModifyListing(req.user.userId, listingId);
+    if (!canModify) {
+      throw new AppError('You are not authorized to update this listing', 403);
+    }
+
+    // Get current listing to check status
+    const existingListing = await prisma.listing.findUnique({
+      where: { id: listingId },
+      select: { status: true, userId: true },
+    });
+
+    if (!existingListing) {
+      throw new AppError('Listing not found', 404);
+    }
+
+    // Determine new status based on who is updating
+    if (isAdmin) {
+      // Admin can set any status
+      listingData.status = requestedStatus || existingListing.status;
+    } else {
+      // Non-admin (owner) updating their listing
+      // If it was published, it goes back to pending for review
+      if (existingListing.status === LISTING_STATUS.PUBLISH) {
+        listingData.status = LISTING_STATUS.PENDING;
+        listingData.previousStatus = LISTING_STATUS.PUBLISH;
+        message = 'Listing updated and submitted for review';
+      } else if (requestedStatus === LISTING_STATUS.DRAFT) {
+        // Owner can save as draft
+        listingData.status = LISTING_STATUS.DRAFT;
+      } else {
+        // Keep as pending or set to pending
+        listingData.status = LISTING_STATUS.PENDING;
+      }
+    }
+
     listing = await prisma.listing.update({
-      where: { id: parseInt(post_id) },
+      where: { id: listingId },
       data: listingData,
     });
   } else {
-    // Create new
+    // Create new listing
     listingData.userId = req.user.userId;
     listingData.slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now();
+
+    // New listings start as pending (unless admin creates with specific status)
+    if (isAdmin && requestedStatus) {
+      listingData.status = requestedStatus;
+    } else if (requestedStatus === LISTING_STATUS.DRAFT) {
+      listingData.status = LISTING_STATUS.DRAFT;
+    } else {
+      listingData.status = LISTING_STATUS.PENDING;
+      message = 'Listing created and submitted for review';
+    }
 
     listing = await prisma.listing.create({
       data: listingData,
@@ -476,12 +625,16 @@ export const saveListing = asyncHandler(async (req: AuthRequest, res: Response) 
 
   res.json({
     success: true,
-    message: 'Listing saved successfully',
-    data: { id: listing.id },
+    message,
+    data: {
+      id: listing.id,
+      status: listing.status,
+      requires_review: listing.status === LISTING_STATUS.PENDING,
+    },
   });
 });
 
-// Delete listing
+// Delete listing - Only owner or admin can delete
 export const deleteListing = asyncHandler(async (req: AuthRequest, res: Response) => {
   if (!req.user) {
     throw new AppError('Unauthorized', 401);
@@ -493,22 +646,16 @@ export const deleteListing = asyncHandler(async (req: AuthRequest, res: Response
     throw new AppError('Listing ID is required', 400);
   }
 
-  const listing = await prisma.listing.findUnique({
-    where: { id: parseInt(post_id) },
-  });
+  const listingId = parseInt(post_id);
 
-  if (!listing) {
-    throw new AppError('Listing not found', 404);
-  }
-
-  const adminUser = await isAdminUser(req.user.userId);
-
-  if (listing.userId !== req.user.userId && !adminUser) {
-    throw new AppError('Unauthorized to delete this listing', 403);
+  // Check authorization
+  const canModify = await canModifyListing(req.user.userId, listingId);
+  if (!canModify) {
+    throw new AppError('You are not authorized to delete this listing', 403);
   }
 
   await prisma.listing.delete({
-    where: { id: listing.id },
+    where: { id: listingId },
   });
 
   res.json({
@@ -592,6 +739,7 @@ export const getTags = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
+// Admin-only: Update listing status (approve/reject moderation)
 export const updateListingStatus = asyncHandler(async (req: AuthRequest, res: Response) => {
   if (!req.user) {
     throw new AppError('Unauthorized', 401);
@@ -609,23 +757,59 @@ export const updateListingStatus = asyncHandler(async (req: AuthRequest, res: Re
   }
 
   const { status } = req.body;
-  const allowedStatuses = ['publish', 'pending', 'draft'];
+  const allowedStatuses = [LISTING_STATUS.PUBLISH, LISTING_STATUS.PENDING, LISTING_STATUS.DRAFT];
   if (!status || !allowedStatuses.includes(status)) {
     throw new AppError('Invalid status', 400);
   }
 
+  // Get current listing to store previous status
+  const existingListing = await prisma.listing.findUnique({
+    where: { id: listingId },
+    select: { status: true },
+  });
+
+  if (!existingListing) {
+    throw new AppError('Listing not found', 404);
+  }
+
+  const updateData: any = {
+    status,
+    moderatedAt: new Date(),
+    moderatedBy: req.user.userId,
+  };
+
+  // Store previous status if changing
+  if (existingListing.status !== status) {
+    updateData.previousStatus = existingListing.status;
+  }
+
   const listing = await prisma.listing.update({
     where: { id: listingId },
-    data: { status },
-    select: { id: true, status: true },
+    data: updateData,
+    select: {
+      id: true,
+      title: true,
+      status: true,
+      previousStatus: true,
+      moderatedAt: true,
+      userId: true,
+    },
   });
+
+  const statusMessage = status === LISTING_STATUS.PUBLISH
+    ? 'Listing has been approved and published'
+    : status === LISTING_STATUS.PENDING
+      ? 'Listing has been set to pending review'
+      : 'Listing has been saved as draft';
 
   res.json({
     success: true,
+    message: statusMessage,
     data: listing,
   });
 });
 
+// Admin-only: Delete any listing
 export const adminDeleteListing = asyncHandler(async (req: AuthRequest, res: Response) => {
   if (!req.user) {
     throw new AppError('Unauthorized', 401);
@@ -649,5 +833,218 @@ export const adminDeleteListing = asyncHandler(async (req: AuthRequest, res: Res
   res.json({
     success: true,
     message: 'Listing deleted successfully',
+  });
+});
+
+// Admin-only: Get listings pending moderation
+export const getPendingListings = asyncHandler(async (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    throw new AppError('Unauthorized', 401);
+  }
+
+  const isAdmin = await isAdminUser(req.user.userId);
+  if (!isAdmin) {
+    throw new AppError('Admin access required', 403);
+  }
+
+  const baseUrl = getBaseUrl(req);
+  const { skip, take, page } = getPaginationParams(req.query);
+
+  const [listings, total] = await Promise.all([
+    prisma.listing.findMany({
+      where: { status: LISTING_STATUS.PENDING },
+      skip,
+      take,
+      orderBy: { createdAt: 'asc' }, // Oldest first for moderation queue
+      include: {
+        user: {
+          select: {
+            id: true,
+            displayName: true,
+            firstName: true,
+            lastName: true,
+            email: true,
+            image: true,
+          },
+        },
+        categories: {
+          where: { type: 'category' },
+          include: { category: true },
+          take: 1,
+        },
+        galleries: {
+          take: 1,
+          orderBy: { order: 'asc' },
+        },
+      },
+    }),
+    prisma.listing.count({ where: { status: LISTING_STATUS.PENDING } }),
+  ]);
+
+  const data = listings.map((listing) => ({
+    ID: listing.id,
+    post_title: listing.title,
+    post_excerpt: listing.excerpt,
+    post_date: listing.createdAt.toISOString(),
+    post_modified: listing.updatedAt.toISOString(),
+    post_status: listing.status,
+    previous_status: listing.previousStatus,
+    image: buildImageResponse(
+      baseUrl,
+      listing.thumbnail || listing.galleries[0]?.full || '',
+      listing.galleries[0]?.thumb || listing.thumbnail || '',
+      listing.id,
+    ),
+    category: listing.categories[0]
+      ? {
+          term_id: listing.categories[0].category.id,
+          name: listing.categories[0].category.name,
+          slug: listing.categories[0].category.slug,
+        }
+      : null,
+    author: {
+      id: listing.user.id,
+      name: listing.user.displayName || `${listing.user.firstName} ${listing.user.lastName}`,
+      email: listing.user.email,
+      user_photo: listing.user.image,
+    },
+    address: listing.address,
+  }));
+
+  const pagination = createPaginationResponse(page, take, total);
+
+  res.json({
+    success: true,
+    data,
+    pagination,
+    total_pending: total,
+  });
+});
+
+// Get user's own listings (all statuses)
+export const getMyListings = asyncHandler(async (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    throw new AppError('Unauthorized', 401);
+  }
+
+  const baseUrl = getBaseUrl(req);
+  const { skip, take, page } = getPaginationParams(req.query);
+  const { post_status } = req.query;
+
+  const where: any = { userId: req.user.userId };
+
+  if (post_status && (post_status as string).toLowerCase() !== 'all') {
+    where.status = post_status;
+  }
+
+  const [listings, total] = await Promise.all([
+    prisma.listing.findMany({
+      where,
+      skip,
+      take,
+      orderBy: { updatedAt: 'desc' },
+      include: {
+        categories: {
+          where: { type: 'category' },
+          include: { category: true },
+          take: 1,
+        },
+        galleries: {
+          take: 1,
+          orderBy: { order: 'asc' },
+        },
+      },
+    }),
+    prisma.listing.count({ where }),
+  ]);
+
+  // Count by status
+  const statusCounts = await prisma.listing.groupBy({
+    by: ['status'],
+    where: { userId: req.user.userId },
+    _count: true,
+  });
+
+  const counts = {
+    pending: 0,
+    publish: 0,
+    draft: 0,
+    total: 0,
+  };
+
+  statusCounts.forEach((s) => {
+    if (s.status === LISTING_STATUS.PENDING) counts.pending = s._count;
+    if (s.status === LISTING_STATUS.PUBLISH) counts.publish = s._count;
+    if (s.status === LISTING_STATUS.DRAFT) counts.draft = s._count;
+    counts.total += s._count;
+  });
+
+  const data = listings.map((listing) => ({
+    ID: listing.id,
+    post_title: listing.title,
+    post_excerpt: listing.excerpt,
+    post_date: listing.createdAt.toISOString(),
+    post_modified: listing.updatedAt.toISOString(),
+    post_status: listing.status,
+    status_label: listing.status === LISTING_STATUS.PENDING
+      ? 'Pending Review'
+      : listing.status === LISTING_STATUS.PUBLISH
+        ? 'Published'
+        : 'Draft',
+    image: buildImageResponse(
+      baseUrl,
+      listing.thumbnail || listing.galleries[0]?.full || '',
+      listing.galleries[0]?.thumb || listing.thumbnail || '',
+      listing.id,
+    ),
+    category: listing.categories[0]
+      ? {
+          term_id: listing.categories[0].category.id,
+          name: listing.categories[0].category.name,
+        }
+      : null,
+    address: listing.address,
+    rating_avg: listing.ratingAvg,
+    view_count: listing.viewCount,
+  }));
+
+  const pagination = createPaginationResponse(page, take, total);
+
+  res.json({
+    success: true,
+    data,
+    pagination,
+    counts,
+  });
+});
+
+// Get current user info including role
+export const getCurrentUserRole = asyncHandler(async (req: AuthRequest, res: Response) => {
+  if (!req.user) {
+    throw new AppError('Unauthorized', 401);
+  }
+
+  const user = await prisma.user.findUnique({
+    where: { id: req.user.userId },
+    select: {
+      id: true,
+      role: true,
+      userLevel: true,
+    },
+  });
+
+  if (!user) {
+    throw new AppError('User not found', 404);
+  }
+
+  const isAdmin = user.role === USER_ROLES.ADMIN || user.userLevel >= 10;
+
+  res.json({
+    success: true,
+    data: {
+      userId: user.id,
+      role: user.role,
+      isAdmin,
+    },
   });
 });

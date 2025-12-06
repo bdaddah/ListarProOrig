@@ -89,3 +89,42 @@ export const onPayment = (callback: (method: PaymentModel) => void) => {
     callback,
   });
 };
+
+export const onLoadMyListings = (
+  filter: FilterModel,
+  params: any,
+  callback: (result: any) => void,
+) => {
+  return store.dispatch({
+    type: actionTypes.LOAD_MY_LISTINGS,
+    filter,
+    params,
+    callback,
+  });
+};
+
+export const onLoadPendingListings = (
+  filter: FilterModel,
+  params: any,
+  callback: (result: any) => void,
+) => {
+  return store.dispatch({
+    type: actionTypes.LOAD_PENDING_LISTINGS,
+    filter,
+    params,
+    callback,
+  });
+};
+
+export const onUpdateListingStatus = (
+  listingId: number,
+  status: string,
+  callback: (success: boolean) => void,
+) => {
+  return store.dispatch({
+    type: actionTypes.UPDATE_LISTING_STATUS,
+    listingId,
+    status,
+    callback,
+  });
+};

@@ -8,7 +8,11 @@ import {themeSupport} from './theme';
 export const Settings = {
   name: 'Listar Pro',
   appVersion: version,
-  domain: 'https://ichhar.kinsta.cloud',
+  // NEW BACKEND: TypeScript/Node.js backend (replaces WordPress)
+  // Use your local IP address so mobile devices/emulators can connect
+  domain: 'http://192.168.1.18:3000',
+  // OLD WORDPRESS: Uncomment to use WordPress backend
+  // domain: 'https://ichhar.kinsta.cloud',
   defaultLanguage: 'en',
   defaultFont: 'Poppins',
   fontSupport: ['SFProText', 'Raleway', 'Poppins'],

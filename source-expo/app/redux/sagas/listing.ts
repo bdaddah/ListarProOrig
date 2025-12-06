@@ -426,6 +426,144 @@ function* watchPayment() {
   yield takeEvery(actionTypes.REQUEST_PAYMENT, onRequestPayment);
 }
 
+/**
+ * on handle load my listings
+ * @param action
+ * @returns {Generator<*, void, *>}
+ */
+function* onLoadMyListings(action: Action): Generator<any, void, any> {
+  try {
+    const setting = yield select(settingSelect);
+
+    let params: any = {
+      page: action.params?.page || 1,
+      per_page: setting?.perPage,
+      s: action.params?.keyword,
+    };
+
+    if (action.filter) {
+      const filter = yield action.filter.getParams();
+      params = {
+        ...params,
+        ...filter,
+      };
+    }
+    const response = yield Api.http.getMyListings({
+      params,
+    });
+
+    if (response.success) {
+      const data = response.data.map((item: any) => {
+        return ProductModel.fromJson(item);
+      });
+      const pagination = PaginationModel.fromJson(response.pagination);
+      action?.callback?.({pagination, data});
+    } else {
+      Api.navigator?.showToast({
+        message: response.message ?? response.msg,
+        type: 'warning',
+      });
+    }
+  } catch (error: any) {
+    Api.navigator?.showToast({
+      message: error.message,
+      type: 'warning',
+    });
+  }
+}
+
+/**
+ * on handle load pending listings (admin)
+ * @param action
+ * @returns {Generator<*, void, *>}
+ */
+function* onLoadPendingListings(action: Action): Generator<any, void, any> {
+  try {
+    const setting = yield select(settingSelect);
+
+    let params: any = {
+      page: action.params?.page || 1,
+      per_page: setting?.perPage,
+      s: action.params?.keyword,
+    };
+
+    if (action.filter) {
+      const filter = yield action.filter.getParams();
+      params = {
+        ...params,
+        ...filter,
+      };
+    }
+    const response = yield Api.http.getPendingListings({
+      params,
+    });
+
+    if (response.success) {
+      const data = response.data.map((item: any) => {
+        return ProductModel.fromJson(item);
+      });
+      const pagination = PaginationModel.fromJson(response.pagination);
+      action?.callback?.({pagination, data});
+    } else {
+      Api.navigator?.showToast({
+        message: response.message ?? response.msg,
+        type: 'warning',
+      });
+    }
+  } catch (error: any) {
+    Api.navigator?.showToast({
+      message: error.message,
+      type: 'warning',
+    });
+  }
+}
+
+/**
+ * on update listing status (admin)
+ * @param action
+ * @returns {Generator<*, void, *>}
+ */
+function* onUpdateListingStatus(action: Action): Generator<any, void, any> {
+  try {
+    const response = yield Api.http.updateListingStatus(
+      action.listingId,
+      action.status,
+    );
+
+    if (response.success) {
+      Api.navigator?.showToast({
+        message: response.message || 'Status updated successfully',
+        type: 'success',
+      });
+      action?.callback?.(true);
+    } else {
+      Api.navigator?.showToast({
+        message: response.message ?? response.msg,
+        type: 'warning',
+      });
+      action?.callback?.(false);
+    }
+  } catch (error: any) {
+    Api.navigator?.showToast({
+      message: error.message,
+      type: 'warning',
+    });
+    action?.callback?.(false);
+  }
+}
+
+function* watchMyListings() {
+  yield takeEvery(actionTypes.LOAD_MY_LISTINGS, onLoadMyListings);
+}
+
+function* watchPendingListings() {
+  yield takeEvery(actionTypes.LOAD_PENDING_LISTINGS, onLoadPendingListings);
+}
+
+function* watchUpdateListingStatus() {
+  yield takeEvery(actionTypes.UPDATE_LISTING_STATUS, onUpdateListingStatus);
+}
+
 export default function* listingSagas() {
   yield all([
     watchLoadList(),
@@ -437,5 +575,8 @@ export default function* listingSagas() {
     watchSubmit(),
     watchLoadTags(),
     watchPayment(),
+    watchMyListings(),
+    watchPendingListings(),
+    watchUpdateListingStatus(),
   ]);
 }

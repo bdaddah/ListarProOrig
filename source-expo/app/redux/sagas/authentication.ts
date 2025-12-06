@@ -89,6 +89,45 @@ function* onLogin(action: Action): Generator<any, void, any> {
 }
 
 /**
+ * handle social login
+ * @param action
+ * @returns {Generator<*, void, *>}
+ */
+function* onSocialLogin(action: Action): Generator<any, void, any> {
+  try {
+    Api.navigator?.showLoading();
+    const response = yield Api.http.socialLogin({params: action.params});
+    if (response.success) {
+      const user = UserModel.fromJson(response.data);
+      yield put({type: actionTypes.SAVE_USER, user});
+      yield put({type: actionTypes.LOAD_WISHLIST});
+      Api.navigator?.showToast({
+        message: 'Login successful',
+        type: 'success',
+      });
+    } else {
+      Api.navigator?.showToast({
+        message: response.message ?? response.msg,
+        type: 'default',
+      });
+    }
+    action.callback?.({
+      success: response.success,
+      message: response.message,
+    });
+  } catch (error: any) {
+    action.callback?.({
+      success: false,
+      message: error.response?.data?.message ?? error.message,
+    });
+    Api.navigator?.showToast({
+      message: error?.response?.data?.message ?? error?.message,
+      type: 'warning',
+    });
+  }
+}
+
+/**
  * handle register
  * @param action
  * @returns {Generator<*, void, *>}
@@ -124,9 +163,35 @@ function* onForgot(action: Action): Generator<any, void, any> {
       message: response.message ?? response.msg,
       type: response.success ? 'success' : 'default',
     });
-    action.callback?.({success: response.success, code: response.code});
+    action.callback?.({
+      success: response.success,
+      code: response.code,
+      data: response.data,
+    });
   } catch (error: any) {
     action.callback?.({success: false, code: error.response?.data?.code});
+    Api.navigator?.showToast({
+      message: error.response?.data?.message ?? error.message,
+      type: 'warning',
+    });
+  }
+}
+
+/**
+ * handle set new password
+ * @param action
+ * @returns {Generator<*, void, *>}
+ */
+function* onSetNewPassword(action: Action): Generator<any, void, any> {
+  try {
+    const response = yield Api.http.setNewPassword({params: action.params});
+    Api.navigator?.showToast({
+      message: response.message ?? response.msg,
+      type: response.success ? 'success' : 'default',
+    });
+    action.callback?.({success: response.success, message: response.message});
+  } catch (error: any) {
+    action.callback?.({success: false, message: error.response?.data?.message});
     Api.navigator?.showToast({
       message: error.response?.data?.message ?? error.message,
       type: 'warning',
@@ -263,12 +328,20 @@ function* watchLogin() {
   yield takeEvery(actionTypes.LOGIN, onLogin);
 }
 
+function* watchSocialLogin() {
+  yield takeEvery(actionTypes.SOCIAL_LOGIN, onSocialLogin);
+}
+
 function* watchRegister() {
   yield takeEvery(actionTypes.REGISTER, onRegister);
 }
 
 function* watchForgot() {
   yield takeEvery(actionTypes.FORGOT, onForgot);
+}
+
+function* watchSetNewPassword() {
+  yield takeEvery(actionTypes.SET_NEW_PASSWORD, onSetNewPassword);
 }
 
 function* watchEditProfile() {
@@ -294,8 +367,10 @@ function* watchDeactivate() {
 export default function* authSagas() {
   yield all([
     watchLogin(),
+    watchSocialLogin(),
     watchAuthCheck(),
     watchForgot(),
+    watchSetNewPassword(),
     watchRegister(),
     watchEditProfile(),
     watchFetchUser(),

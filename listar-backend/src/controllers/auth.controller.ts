@@ -4,6 +4,12 @@ import { generateToken } from '../utils/jwt';
 import { hashPassword, comparePassword } from '../utils/password';
 import { AppError, asyncHandler } from '../middlewares/error.middleware';
 import { AuthRequest } from '../middlewares/auth.middleware';
+import {
+  generateResetToken,
+  getTokenExpiration,
+  sendPasswordResetEmail,
+  sendOTPEmail,
+} from '../utils/email';
 
 // Login
 export const login = asyncHandler(async (req: Request, res: Response) => {
@@ -37,6 +43,9 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 
   const token = generateToken({ userId: user.id, email: user.email });
 
+  // Determine if user is admin
+  const isAdmin = user.role === 'admin' || user.userLevel >= 10;
+
   res.json({
     success: true,
     data: {
@@ -50,6 +59,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
       user_photo: user.image,
       user_url: user.url,
       user_level: user.userLevel,
+      role: user.role,
+      is_admin: isAdmin,
       description: user.description,
     },
   });
@@ -121,6 +132,7 @@ export const getUser = asyncHandler(async (req: AuthRequest, res: Response) => {
       displayName: true,
       image: true,
       url: true,
+      role: true,
       userLevel: true,
       description: true,
       tag: true,
@@ -145,6 +157,9 @@ export const getUser = asyncHandler(async (req: AuthRequest, res: Response) => {
     _count: { id: true },
   });
 
+  // Determine if user is admin
+  const isAdmin = user.role === 'admin' || user.userLevel >= 10;
+
   res.json({
     success: true,
     data: {
@@ -157,6 +172,8 @@ export const getUser = asyncHandler(async (req: AuthRequest, res: Response) => {
       user_photo: user.image,
       user_url: user.url,
       user_level: user.userLevel,
+      role: user.role,
+      is_admin: isAdmin,
       description: user.description,
       tag: user.tag,
       rating_avg: listingsWithRatings._avg.ratingAvg || 0,
@@ -233,7 +250,7 @@ export const changePassword = asyncHandler(async (req: AuthRequest, res: Respons
 
 // Forgot Password
 export const forgotPassword = asyncHandler(async (req: Request, res: Response) => {
-  const { email } = req.body;
+  const { email, code } = req.body;
 
   if (!email) {
     throw new AppError('Email is required', 400);
@@ -243,19 +260,135 @@ export const forgotPassword = asyncHandler(async (req: Request, res: Response) =
     where: { email },
   });
 
+  // Security: Always return success message even if user not found
   if (!user) {
-    // Return success even if user not found (security best practice)
     return res.json({
       success: true,
-      message: 'If the email exists, a password reset link has been sent',
+      message: 'If the email exists, a password reset code has been sent',
     });
   }
 
-  // TODO: Implement email sending with reset token
-  // For now, just return success
+  // If code is provided, this is a verification request (from OTP screen)
+  if (code) {
+    // Find valid reset token that matches the code (first 6 chars uppercase)
+    const resetRecords = await prisma.passwordReset.findMany({
+      where: {
+        userId: user.id,
+        used: false,
+        expiresAt: { gt: new Date() },
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 1,
+    });
+
+    const resetRecord = resetRecords[0];
+    if (!resetRecord) {
+      throw new AppError('Invalid or expired reset code', 400, 'invalid_code');
+    }
+
+    // Check if code matches (first 6 chars of token)
+    const expectedCode = resetRecord.token.substring(0, 6).toUpperCase();
+    if (code.toUpperCase() !== expectedCode) {
+      throw new AppError('Invalid reset code', 400, 'invalid_code');
+    }
+
+    // Code is valid - return success with token for password reset
+    return res.json({
+      success: true,
+      message: 'Code verified successfully',
+      data: {
+        reset_token: resetRecord.token,
+      },
+    });
+  }
+
+  // Invalidate any existing reset tokens for this user
+  await prisma.passwordReset.updateMany({
+    where: { userId: user.id, used: false },
+    data: { used: true },
+  });
+
+  // Generate new reset token
+  const resetToken = generateResetToken();
+  const expiresAt = getTokenExpiration();
+
+  // Store reset token in database
+  await prisma.passwordReset.create({
+    data: {
+      userId: user.id,
+      token: resetToken,
+      expiresAt,
+    },
+  });
+
+  // Send reset email
+  const userName = user.displayName || user.firstName || user.email.split('@')[0];
+  const emailSent = await sendPasswordResetEmail(user.email, userName, resetToken);
+
+  if (!emailSent && process.env.NODE_ENV !== 'development') {
+    throw new AppError('Failed to send reset email. Please try again later.', 500);
+  }
+
+  // Return response indicating OTP is required (mobile app will show OTP screen)
   res.json({
     success: true,
-    message: 'Password reset instructions sent to your email',
+    code: 'auth_otp_require',
+    message: 'Password reset code sent to your email',
+  });
+});
+
+// Reset Password (set new password using token)
+export const resetPassword = asyncHandler(async (req: Request, res: Response) => {
+  const { email, token, new_password } = req.body;
+
+  if (!email || !token || !new_password) {
+    throw new AppError('Email, token, and new password are required', 400);
+  }
+
+  if (new_password.length < 6) {
+    throw new AppError('Password must be at least 6 characters', 400);
+  }
+
+  const user = await prisma.user.findUnique({
+    where: { email },
+  });
+
+  if (!user) {
+    throw new AppError('Invalid email or token', 400);
+  }
+
+  // Find valid reset token
+  const resetRecord = await prisma.passwordReset.findFirst({
+    where: {
+      userId: user.id,
+      token,
+      used: false,
+      expiresAt: { gt: new Date() },
+    },
+  });
+
+  if (!resetRecord) {
+    throw new AppError('Invalid or expired reset token', 400, 'invalid_token');
+  }
+
+  // Hash new password
+  const hashedPassword = await hashPassword(new_password);
+
+  // Update password and mark token as used
+  await prisma.$transaction([
+    prisma.user.update({
+      where: { id: user.id },
+      data: { password: hashedPassword },
+    }),
+    prisma.passwordReset.update({
+      where: { id: resetRecord.id },
+      data: { used: true },
+    }),
+  ]);
+
+  res.json({
+    success: true,
+    message: 'Password reset successfully. You can now login with your new password.',
   });
 });
 

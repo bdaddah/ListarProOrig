@@ -17,7 +17,7 @@ import {
   Text,
 } from '@passionui/components';
 import {authenticationActions} from '@redux';
-import {OTPVerification} from '@screens';
+import {OTPVerification, SetNewPassword} from '@screens';
 
 const ForgotPassword: React.FC<ScreenContainerProps> = ({navigation}) => {
   const {theme, navigator, translate} = useContext(ApplicationContext);
@@ -42,7 +42,7 @@ const ForgotPassword: React.FC<ScreenContainerProps> = ({navigation}) => {
   };
 
   /**
-   * on verify
+   * on verify OTP code
    * @param otp
    */
   const onVerify = (otp?: string) => {
@@ -50,28 +50,44 @@ const ForgotPassword: React.FC<ScreenContainerProps> = ({navigation}) => {
       Keyboard.dismiss();
       authenticationActions.onForgot(
         {email: email.current, code: otp},
-        resolve,
+        result => {
+          // If OTP is verified and we have a reset token, navigate to set new password
+          if (result.success && result.data?.reset_token) {
+            navigator?.push({
+              screen: SetNewPassword,
+              email: email.current,
+              resetToken: result.data.reset_token,
+              onSuccess: () => {
+                // Pop back to authentication screen after password reset
+                navigator?.popToTop();
+              },
+            });
+          }
+          resolve(result);
+        },
       );
     });
   };
 
   /**
-   * on confirm
+   * on confirm - request OTP
    */
   const onConfirm = async () => {
-    const result = await onVerify();
-    if (result.success) {
-      navigator?.pop();
-    } else if (result.code === 'auth_otp_require') {
-      navigator?.push({
-        screen: OTPVerification,
-        email: email.current,
-        onVerify: onVerify,
-        onSuccess: () => {
-          navigator?.pop();
-        },
-      });
-    }
+    Keyboard.dismiss();
+    authenticationActions.onForgot({email: email.current}, result => {
+      if (result.code === 'auth_otp_require') {
+        // Navigate to OTP verification screen
+        navigator?.push({
+          screen: OTPVerification,
+          email: email.current,
+          onVerify: onVerify,
+          onSuccess: () => {
+            // This is called after OTP is verified and password is reset
+            navigator?.popToTop();
+          },
+        });
+      }
+    });
   };
 
   /**

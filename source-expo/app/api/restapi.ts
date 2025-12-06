@@ -43,12 +43,8 @@ class HTTP {
         const token = getToken();
         const device = getDevice();
         if (!config.baseURL) {
-          // NEW BACKEND: TypeScript/Node.js backend (replaces WordPress)
-          // Use your local IP address so mobile devices/emulators can connect
-          config.baseURL = 'http://192.168.42.129:3000/wp-json';
-
-          // OLD WORDPRESS: Uncomment to use WordPress backend
-          // config.baseURL = `${getDomain()}/wp-json`;
+          // Use domain from config (now points to new backend)
+          config.baseURL = `${getDomain()}/wp-json`;
         }
         console.log('Before Request >>>', config);
         // Add more config before request
@@ -232,6 +228,15 @@ export default class RestAPI {
     user: '/listar/v1/auth/user',
     register: '/listar/v1/auth/register',
     forgotPassword: '/listar/v1/auth/reset_password',
+    setNewPassword: '/listar/v1/auth/set_new_password',
+    socialLogin: '/listar/v1/social/login',
+    socialLink: '/listar/v1/social/link',
+    socialUnlink: '/listar/v1/social/unlink',
+    socialLinked: '/listar/v1/social/linked',
+    myListings: '/listar/v1/place/my-listings',
+    userRole: '/listar/v1/auth/role',
+    adminPendingListings: '/listar/v1/admin/listings/pending',
+    adminUpdateStatus: '/listar/v1/admin/listings', // /:id/status
     changeProfile: '/wp/v2/users/me',
     setting: '/listar/v1/setting/init',
     submitSetting: '/listar/v1/place/form',
@@ -345,8 +350,41 @@ export default class RestAPI {
     });
   };
 
+  socialLogin = (args: PostParams) => {
+    return this.http.post(this.endPoints.socialLogin, {
+      ...args,
+      loading: true,
+    });
+  };
+
+  socialLink = (args: PostParams) => {
+    return this.http.post(this.endPoints.socialLink, {
+      ...args,
+      loading: true,
+    });
+  };
+
+  socialUnlink = (args: PostParams) => {
+    return this.http.post(this.endPoints.socialUnlink, {
+      ...args,
+      loading: true,
+    });
+  };
+
+  getSocialLinked = (args: GetParams) => {
+    return this.http.get(this.endPoints.socialLinked, args);
+  };
+
   forgotPassword = (args: PostParams) => {
     return this.http.post(this.endPoints.forgotPassword, {
+      ...args,
+      headers: {'Content-Type': 'multipart/form-data'},
+      loading: true,
+    });
+  };
+
+  setNewPassword = (args: PostParams) => {
+    return this.http.post(this.endPoints.setNewPassword, {
       ...args,
       headers: {'Content-Type': 'multipart/form-data'},
       loading: true,
@@ -413,6 +451,29 @@ export default class RestAPI {
 
   getProduct = (args: GetParams) => {
     return this.http.get(this.endPoints.product, {...args, gps: true});
+  };
+
+  // Get user's own listings (all statuses)
+  getMyListings = (args: GetParams) => {
+    return this.http.get(this.endPoints.myListings, args);
+  };
+
+  // Get current user role
+  getUserRole = () => {
+    return this.http.get(this.endPoints.userRole, {});
+  };
+
+  // Admin: Get pending listings for moderation
+  getPendingListings = (args: GetParams) => {
+    return this.http.get(this.endPoints.adminPendingListings, args);
+  };
+
+  // Admin: Update listing status (approve/reject)
+  updateListingStatus = (listingId: number, status: string) => {
+    return this.http.post(`${this.endPoints.adminUpdateStatus}/${listingId}/status`, {
+      params: {status},
+      loading: true,
+    });
   };
 
   getAuthorList = (args: PostParams) => {

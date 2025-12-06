@@ -21,10 +21,12 @@ import {UserModel} from '@models+types';
 import {Linking, Platform, View} from 'react-native';
 import styles from './styles';
 import {
+  AdminModeration,
   BookingManagement,
   ChangePassword,
   Developer,
   EditProfile,
+  MyListings,
   Profile,
   Setting,
 } from '@screens';
@@ -46,6 +48,20 @@ const Account: React.FC<ScreenContainerProps> = ({navigation, options}) => {
    */
   const onBookingManagement = () => {
     navigator?.push({screen: BookingManagement});
+  };
+
+  /**
+   * on my listings
+   */
+  const onMyListings = () => {
+    navigator?.push({screen: MyListings});
+  };
+
+  /**
+   * on admin moderation (pending listings)
+   */
+  const onAdminModeration = () => {
+    navigator?.push({screen: AdminModeration});
   };
 
   /**
@@ -189,6 +205,38 @@ const Account: React.FC<ScreenContainerProps> = ({navigation, options}) => {
             onPress={onBookingManagement}
           />
         </Item>
+        <Item widthSpan={12}>
+          <ListTitle
+            leading={
+              <View
+                style={[
+                  styles.icon,
+                  {backgroundColor: Colors.lighten(Colors.green_04, 32)},
+                ]}>
+                <Icon name={'format-list-bulleted'} color={Colors.green_04} />
+              </View>
+            }
+            title={translate('my_listings')}
+            onPress={onMyListings}
+          />
+        </Item>
+        {user?.isAdmin && (
+          <Item widthSpan={12}>
+            <ListTitle
+              leading={
+                <View
+                  style={[
+                    styles.icon,
+                    {backgroundColor: Colors.lighten(Colors.orange_04, 32)},
+                  ]}>
+                  <Icon name={'shield-check-outline'} color={Colors.orange_04} />
+                </View>
+              }
+              title={translate('pending_listings')}
+              onPress={onAdminModeration}
+            />
+          </Item>
+        )}
         <Item widthSpan={12}>
           <ListTitle
             leading={

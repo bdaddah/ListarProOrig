@@ -12,6 +12,7 @@ router.post('/token/validate', authenticate, authController.validateToken);
 const authRouter = Router();
 authRouter.post('/register', authController.register);
 authRouter.post('/reset_password', authController.forgotPassword);
+authRouter.post('/set_new_password', authController.resetPassword);
 authRouter.get('/user', authenticate, authController.getUser);
 authRouter.post('/otp', authenticate, authController.requestOTP);
 authRouter.post('/deactivate', authenticate, authController.deactivateAccount);

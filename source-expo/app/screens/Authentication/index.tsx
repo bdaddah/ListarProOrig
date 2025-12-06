@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useRef, useState} from 'react';
 import {
   ApplicationContext,
   Button,
+  Icon,
   Input,
   InputRef,
   Screen,
@@ -9,13 +10,30 @@ import {
   SizedBox,
   Spacing,
   Styles,
+  Text,
 } from '@passionui/components';
-import {Keyboard, View} from 'react-native';
+import {Keyboard, Platform, TouchableOpacity, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {validate} from '@utils';
 import {authenticationActions, userSelect} from '@redux';
 import {ForgotPassword, OTPVerification, SignUp} from '@screens';
 import styles from './styles';
+import * as Google from 'expo-auth-session/providers/google';
+import * as Facebook from 'expo-auth-session/providers/facebook';
+import * as AppleAuthentication from 'expo-apple-authentication';
+import * as WebBrowser from 'expo-web-browser';
+
+// Enable web browser for OAuth
+WebBrowser.maybeCompleteAuthSession();
+
+// Social provider colors
+const SOCIAL_COLORS = {
+  google: '#DB4437',
+  facebook: '#4267B2',
+  twitter: '#1DA1F2',
+  yahoo: '#6001D2',
+  apple: '#000000',
+};
 
 const SignIn: React.FC<ScreenContainerProps> = ({navigation, options}) => {
   const {theme, navigator, translate} = useContext(ApplicationContext);
@@ -28,6 +46,93 @@ const SignIn: React.FC<ScreenContainerProps> = ({navigation, options}) => {
     username: null,
     password: null,
   });
+
+  // Google OAuth hook
+  const [googleRequest, googleResponse, googlePromptAsync] = Google.useAuthRequest({
+    // These should come from your app.json or environment
+    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
+    iosClientId: 'YOUR_IOS_CLIENT_ID',
+    webClientId: 'YOUR_WEB_CLIENT_ID',
+  });
+
+  // Facebook OAuth hook
+  const [fbRequest, fbResponse, fbPromptAsync] = Facebook.useAuthRequest({
+    clientId: 'YOUR_FACEBOOK_APP_ID',
+  });
+
+  // Handle Google response
+  useEffect(() => {
+    if (googleResponse?.type === 'success') {
+      const {authentication} = googleResponse;
+      if (authentication?.idToken) {
+        handleSocialLogin('google', authentication.accessToken, authentication.idToken);
+      }
+    }
+  }, [googleResponse]);
+
+  // Handle Facebook response
+  useEffect(() => {
+    if (fbResponse?.type === 'success') {
+      const {authentication} = fbResponse;
+      if (authentication?.accessToken) {
+        handleSocialLogin('facebook', authentication.accessToken);
+      }
+    }
+  }, [fbResponse]);
+
+  /**
+   * Handle social login
+   */
+  const handleSocialLogin = (
+    provider: 'google' | 'facebook' | 'twitter' | 'yahoo' | 'apple',
+    accessToken?: string,
+    idToken?: string,
+    userData?: {firstName?: string; lastName?: string; displayName?: string},
+  ) => {
+    authenticationActions.onSocialLogin(
+      {
+        provider,
+        access_token: accessToken,
+        id_token: idToken,
+        user_data: userData,
+      },
+      result => {
+        if (!result.success) {
+          console.log('Social login failed:', result.message);
+        }
+      },
+    );
+  };
+
+  /**
+   * Handle Apple Sign In
+   */
+  const handleAppleSignIn = async () => {
+    try {
+      const credential = await AppleAuthentication.signInAsync({
+        requestedScopes: [
+          AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
+          AppleAuthentication.AppleAuthenticationScope.EMAIL,
+        ],
+      });
+
+      if (credential.identityToken) {
+        handleSocialLogin(
+          'apple',
+          undefined,
+          credential.identityToken,
+          {
+            firstName: credential.fullName?.givenName ?? undefined,
+            lastName: credential.fullName?.familyName ?? undefined,
+          },
+        );
+      }
+    } catch (e: any) {
+      if (e.code !== 'ERR_CANCELED') {
+        console.log('Apple Sign In Error:', e);
+      }
+    }
+  };
 
   /**
    * autofocus username when screen loaded
@@ -191,6 +296,41 @@ const SignIn: React.FC<ScreenContainerProps> = ({navigation, options}) => {
           onPress={onSignUp}
           title={translate('sign_up')}
         />
+      </View>
+      <SizedBox height={Spacing.L} />
+      {/* Social Login Divider */}
+      <View style={styles.divider}>
+        <View style={[styles.dividerLine, {backgroundColor: theme.colors.divider}]} />
+        <Text style={styles.dividerText} typography="caption" color="secondary">
+          {translate('or_sign_in_with')}
+        </Text>
+        <View style={[styles.dividerLine, {backgroundColor: theme.colors.divider}]} />
+      </View>
+      <SizedBox height={Spacing.M} />
+      {/* Social Login Buttons */}
+      <View style={styles.socialContainer}>
+        {/* Google */}
+        <TouchableOpacity
+          style={[styles.socialButton, {backgroundColor: SOCIAL_COLORS.google}]}
+          onPress={() => googlePromptAsync()}
+          disabled={!googleRequest}>
+          <Icon name="google" color="#FFFFFF" size={24} />
+        </TouchableOpacity>
+        {/* Facebook */}
+        <TouchableOpacity
+          style={[styles.socialButton, {backgroundColor: SOCIAL_COLORS.facebook}]}
+          onPress={() => fbPromptAsync()}
+          disabled={!fbRequest}>
+          <Icon name="facebook" color="#FFFFFF" size={24} />
+        </TouchableOpacity>
+        {/* Apple - iOS only */}
+        {Platform.OS === 'ios' && (
+          <TouchableOpacity
+            style={[styles.socialButton, {backgroundColor: SOCIAL_COLORS.apple}]}
+            onPress={handleAppleSignIn}>
+            <Icon name="apple" color="#FFFFFF" size={24} />
+          </TouchableOpacity>
+        )}
       </View>
     </Screen>
   );

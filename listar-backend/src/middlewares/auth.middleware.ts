@@ -52,14 +52,16 @@ export const requireAdmin = async (req: AuthRequest, res: Response, next: NextFu
 
     const user = await prisma.user.findUnique({
       where: { id: req.user.userId },
-      select: { userLevel: true, active: true },
+      select: { role: true, userLevel: true, active: true },
     });
 
     if (!user || !user.active) {
       throw new AppError('Unauthorized', 401);
     }
 
-    if (user.userLevel < 10) {
+    // Check admin access by role or legacy userLevel
+    const isAdmin = user.role === 'admin' || user.userLevel >= 10;
+    if (!isAdmin) {
       throw new AppError('Admin access required', 403);
     }
 
